@@ -1,13 +1,15 @@
 {
 	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"features": {
-		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/dotnet:1": {
 			"version": "8"
 		}
 	},
 	"customizations": {
 		"vscode": {
+			"settings": {
+		"workbench.colorTheme": "Dark"
+		},
 			"extensions": [
 				"ms-dotnettools.csdevkit",
 				"ms-semantic-kernel.semantic-kernel",
