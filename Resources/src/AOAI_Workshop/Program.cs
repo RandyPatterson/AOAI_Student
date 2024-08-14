@@ -34,7 +34,7 @@ var kernel = kernelBuilder.Build();
 webHostBuilder.Services.AddSingleton<Kernel>(kernel);
 
 
-//Challenge 2: Add Plugins to Semantic Kernel
+//Challenge 3: Add Plugins to Semantic Kernel
 AddPlugins(config, kernel);
 
 var app = webHostBuilder.Build();
@@ -73,8 +73,7 @@ app.MapPost("/chat", async (
     //Challenge 2: Get the response from the AI
 
     
-
-    //return a JSON response that has a single property 'response' with a value containing the response from the LLM
+    //Challenge 2: return a JSON response that has a single property 'response' with a value containing the response from the LLM
     //ie: new { response = response[0].Content }
 });
 
