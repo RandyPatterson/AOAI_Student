@@ -7,24 +7,26 @@
 Thank you for participating in the OpenAI & Semantic Kernel Fundamentals What The Hack. Before you can hack, you will need to set up some prerequisites.
 
 ## Description
+
 In this challenge, you will set up the necessary prerequisites and environment to complete the rest of the hack, including:
+
 - [Access Azure OpenAI](#access-azure-openai)
-- [GitHub CodeSpaces](#setup-github-codespace) or [Local Workstation](#setup-local-workstation)
+- [GitHub CodeSpaces](#setup-github-codespace) or [Local Workstation](#use-local-workstation)
 
-
-
-### Access Azure OpenAI 
+### Access Azure OpenAI
 
 You will need an Azure subscription to complete this hack. If you don't have one, get a free trial here...
+
 - [Azure Subscription](https://azure.microsoft.com/en-us/free/)
 
 - [Azure Passes](#setup-azure-pass): If your hack-a-thon group has access to an Azure Pass, you can utilize it to gain access to Azure OpenAI and other necessary Azure resources for this Hack-a-thon.
 
-
 ### Setup Azure Pass
+
 TBD
 
 ### Setup GitHub CodeSpace
+
 You can use [GitHub CodeSpaces](https://docs.github.com/en/codespaces/overview) where we have a pre-configured Visual Studio Code lab environment set up and ready to go for you, or you can setup a Development environment on your local workstation.
 
 A GitHub CodeSpace is a development environment that is hosted in the cloud that you access via a browser. All of the pre-requisite developer tools for this hack are pre-installed and available in the CodeSpace.
@@ -46,7 +48,7 @@ The GitHub CodeSpace for this hack will host Visual Studio Code with .NET 8 and 
 
 - A GitHub repo containing the student resources and CodeSpace for this hack is hosted here:
   - [WTH OpenAI and Semantic Kernel Fundamentals Repo](https://github.com/RandyPatterson/AOAI_Student)
-  - Please open this link and sign in with your personal GitHub account. 
+  - Please open this link and sign in with your personal GitHub account.
 
 **NOTE:** Make sure you do not sign in with your enterprise managed GitHub account.
 
@@ -64,7 +66,7 @@ Your CodeSpace environment should load in a new browser tab. It will take approx
 
 To work on your local workstation, please ensure you have the following tools and resources before hacking:
 
-- [Visual Studio Code](#visual-studio-code)
+- [Visual Studio Code](https://code.visualstudio.com/download)
   - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
 - Or Visual Studio 2022 +
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
@@ -81,18 +83,18 @@ From a directory where you want to store the resources, clone the repository:
 ```powershell
 git clone https://github.com/RandyPatterson/AOAI_Student.git
 ```
+
 The rest of the challenges will refer to the relative paths inside the Git Repository where you can find the various resources to complete the challenges.
-
-
 
 ## Success Criteria
 
 To complete this challenge successfully, you should be able to:
 
-### If using GitHub CodeSpaces:
+### If using GitHub CodeSpaces
 
 - Verify you have the following files & folders available in the CodeSpace:
-  ```cmd
+
+  ```text
   /workspaces/AOAI_Student
   ├───.devcontainer
   └───Resources
@@ -103,11 +105,12 @@ To complete this challenge successfully, you should be able to:
               └───Properties
   ```
 
-### If working on a local workstation: 
+### If working on a local workstation
 
 - Verify that you have **Visual Studio Code** with the ***C# Dev Kit*** Extension installed or **Visual Studio 2022**
 - Verify you have the following files & folders locally:
-  ```cmd
+
+  ```text
   /AOAI_Student
   ├───.devcontainer
   └───Resources
@@ -119,4 +122,5 @@ To complete this challenge successfully, you should be able to:
   ```
 
 ## Learning Resources
+
 - [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview)

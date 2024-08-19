@@ -1,17 +1,46 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
+using Microsoft.Identity.Client;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
+using Microsoft.SemanticKernel.Plugins.OpenApi;
 using Microsoft.SemanticKernel.Plugins.Web;
 using Microsoft.SemanticKernel.Plugins.Web.Bing;
+using System.Net.Http.Headers;
 using YamlDotNet.Serialization;
 
 #pragma warning disable SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 #pragma warning disable SKEXP0050 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+#pragma warning disable SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+#pragma warning disable SKEXP0040 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
 var webHostBuilder = WebApplication.CreateBuilder(args);
 IConfiguration config = webHostBuilder.Configuration;
+
+// Uncomment this code block to add authentication to the Logic App for CHALLENGE 4
+/*
+string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
+    string TenantId = config["TENANT_ID"]!;
+    string Scope = config["LOGIC_APP_SCOPE"]!;
+    string Authority = $"https://login.microsoftonline.com/{TenantId}";
+    string[] Scopes = { Scope };
+
+    var publicClient = PublicClientApplicationBuilder.Create(ClientId)
+                .WithAuthority(Authority)
+                .WithDefaultRedirectUri() // Uses http://localhost for a console app
+                .Build();
+
+    AuthenticationResult authResult = null;
+    try
+    {
+        authResult = await publicClient.AcquireTokenInteractive(Scopes).ExecuteAsync();
+    }
+    catch (MsalException ex)
+    {
+        Console.WriteLine("An error occurred acquiring the token: " + ex.Message);
+    }
+*/
 
 //Configure Semantic Kernel
 var kernelBuilder = Kernel.CreateBuilder();
@@ -24,7 +53,7 @@ kernelBuilder.AddAzureOpenAIChatCompletion(
 kernelBuilder.Services.AddHttpClient();
 kernelBuilder.Services.AddLogging(builder => {
     builder.AddConfiguration(config.GetSection("Logging"));
-    builder.SetMinimumLevel(LogLevel.Debug);
+    builder.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Debug);
     builder.AddConsole();
 });
 
