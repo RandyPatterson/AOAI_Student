@@ -24,34 +24,34 @@ Participants will learn how to:
 
 ## Challenges
 
-- **[Challenge 00: Prerequisites - Ready, Set, GO!](Student/Challenge-00.md)**
+- **[Challenge 00: Prerequisites - Ready, Set, GO!](./Challenge-00.md)**
   - Prepare your workstation to work with Azure.
-- [Challenge 01](Student/Challenge-01.md): Azure OpenAI Fundamentals
+- [Challenge 01](./Challenge-01.md): Azure OpenAI Fundamentals
   - Deploy an Azure OpenAI Model
   - Prompt Engineering
   - What's possible through prompt engineering
   - System Prompts
   - Best practices when using OpenAI text and chat models
-- [Challenge 02](Student/Challenge-02.md): Semantic Kernel Fundamentals
+- [Challenge 02](./Challenge-02.md): Semantic Kernel Fundamentals
   - Connect your OpenAI model using Semantic Kernel
   - Test Your Application
-- [Challenge 03](Student/Challenge-03.md): Plugins
+- [Challenge 03](./Challenge-03.md): Plugins
   - Create 2 plugins and enable auto calling
   - Create a time plugin to allow time based queries
   - Add API Plugin (TBD)
   - Turn on auto function calling
-- [Challenge 04](Student/Challenge-04.md): Import OpenAPI API as Semantic Kernel Plugin
+- [Challenge 04](./Challenge-04.md): Import OpenAPI API as Semantic Kernel Plugin
   - Create a workflow plugin using Logic Apps
   - Import Logic App into Semantic Kernel
-- [Challenge 05](Student/Challenge-05.md): RAG
+- [Challenge 05](./Challenge-05.md): RAG
   - Document Chunking
   - Add [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) to parse digital forms??
   - [Document Intelligence Studio](https://documentintelligence.ai.azure.com/studio)
-- [Challenge 06](Student/Challenge-06.md): Responsible AI
+- [Challenge 06](./Challenge-06.md): Responsible AI
   - What are services and tools to identify and evaluate harms and data leakage in LLMs?
   - What are ways to evaluate truthfulness and reduce hallucinations? What are methods to evaluate a model if you don't have a ground truth dataset for comparison?
-- [Challenge 07](Student/Challenge-07.md): Multi-Agents (Zack) 
-- [Challenge 08](Student/Challenge-08.md): Image Generation using DALL-E
+- [Challenge 07](./Challenge-07.md): Multi-Agents (Zack) 
+- [Challenge 08](./Challenge-08.md): Image Generation using DALL-E
 
 ## Prerequisites
 
