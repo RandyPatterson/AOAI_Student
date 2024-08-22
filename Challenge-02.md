@@ -24,7 +24,7 @@ In this challenge, you will configure the reference application to use your Azur
 
     At the heart of the Semantic Kernel framework is the **Kernel** object. Here is where you register the AI Models you will be working with and any Plugins you be using in your application. You will learn about Plugins in later challenges. The **Kernel** object is also where you can configure the AI Models you will be using.
 
-    Starting on line 16, the Kernel object is being configured to use an Azure OpenAI chat model by calling the ```AddAzureOpenAIChatCompletion``` method of the Kernel Builder class.  
+    Starting on line 45, the Kernel object is being configured to use an Azure OpenAI chat model by calling the ```AddAzureOpenAIChatCompletion``` method of the Kernel Builder class.  
 
     ```csharp
     //Configure Semantic Kernel
@@ -39,7 +39,7 @@ In this challenge, you will configure the reference application to use your Azur
 
     The **AddAzureOpenAIChatCompletion** method takes three parameters: the deployment model name, the endpoint URL, and the API key. These values are read from the *appsettings.json* file. Next, some additional services are added and logging is configured. Finally, the **Kernel** object is built and the application is started.
 
-    Starting on line 43 are the API endpoints with the most important being the ```/chat``` endpoint. This is where the Chat History including the users prompt is received by the client application and sent to the AI model for processing. The AI response is then sent back to the user. The Kernel object we just created is passed to the handler so that it can be used to interact with the AI model. In the remaining tasks in this challenge you will complete the implementation of the ```/chat``` endpoint.
+    Starting on line 72 begins the API endpoint definitions with the most important being the ```/chat``` endpoint. This is where the Chat History including the users prompt is received by the client application and sent to the AI model for processing. The AI response is then sent back to the user. The Kernel object we just created is passed to the handler so that it can be used to interact with the AI model. In the remaining tasks in this challenge you will complete the implementation of the ```/chat``` endpoint.
 
     ```csharp
     app.MapPost("/chat", async (
@@ -50,7 +50,9 @@ In this challenge, you will configure the reference application to use your Azur
 
 ## Challenges
 
-1. Deploy a ***Standard*** GTP-4o model using  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
+1. Deploy a Standard GTP-4o model using  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
+
+    :exclamation:Do not use the GPT-4o-mini model.  
 
 1. Update the *appsettings.json* file with the Azure OpenAI *Deployment name*, *Endpoint URL* and the *API Key*. These values can be found in the Azure OpenAI Studio.
 
