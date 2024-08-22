@@ -50,9 +50,7 @@ In this challenge, you will configure the reference application to use your Azur
 
 ## Challenges
 
-1. Deploy a Standard GTP-4o model using  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
-
-    :exclamation:Do not use the GPT-4o-mini model.  
+1. Deploy a ***Standard*** GTP-4o model using  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
 
 1. Update the *appsettings.json* file with the Azure OpenAI *Deployment name*, *Endpoint URL* and the *API Key*. These values can be found in the Azure OpenAI Studio.
 
