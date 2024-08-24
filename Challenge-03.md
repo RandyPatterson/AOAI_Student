@@ -4,7 +4,7 @@
 
 ## Pre-requisites
 
-* You should have a functional version of the solution running in Visual Studio or Visual Studio Code.
+Completed [Challenge 02](./Challenge-02.md) and have a functional version of the solution running in Visual Studio or Visual Studio Code.
 
 ## Introduction
 
@@ -18,58 +18,101 @@ Continuing from the previous challenge, navigate to ```.\Resources\src\``` and o
 
 Challenges:
 
-* Launch your AI Chat app, and ask the bot `What time is it?`
-  * Test the prompt ```What time is it?```
-
+* Launch your AI Chat app, and submit the prompt `What time is it?`
+  
     Since the AI does not have the capability to provide real-time information, you will get a response similar to the following:
 
     ```plaintext
     I can't provide real-time information, including the current time. You can check the time on your device or through various online sources.
     ```
 
-      Let's fix this by creating a plugin that can provide the current time.
+    Let's fix this by creating a plugin that can provide the current time and other related information.
 
-* Create a new class in **./Plugins** directory for your Time Plugin
+* Create a new class in **./Plugins** directory for your Time Plugin. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
   * Write a time plugin with the following functions
     1. Return the current Date Time
     1. Return the Year for a date passed in as a parameter
     1. Return the Month for a date passed in as a parameter
     1. Return the Day of Week for a date passed in as a parameter
-* Update the application to add your new Plugin to Semantic Kernel
+  * Update the application to add your new Plugin to Semantic Kernel
+    
+    :bulb: Use the provided ```AddPlugins(...)``` method in the **Program.cs** file to add your new Plugin to Semantic Kernel. Review the documentation [Adding native plugins](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp) for examples on how to do this
+
+  * Enable Automatic Function Calling
+
+      in ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
+
+  * Test the AI by launching the application and asking the bot `What time is it?` again
+
+    Now, the AI should be able to provide the current time by having Semantic Kernel call the ***GetTime*** function in your plugin. The response should be similar to the following:
+
+    ```plaintext
+    The current time is 3:43 PM on August 23, 2024.
+    ```
+
+    See the [Success Criteria](#success-criteria) section for additional questions to test your Time Plugin.
+
+* Review the ```GeocodingPlugin.cs``` file located in the ***Plugins*** directory
+  * Register for a free API key from [Geocoding API](https://geocode.maps.co/) to use in the plugin
+  * Update ```appsettings.json``` with your GEOCODING_API_KEY
+  * Register the Plugin by adding the following code to the ```AddPlugins(...)``` method in **Program.cs**
   
-  :bulb: Use the provided ```AddPlugins(...)``` method in the **Program.cs** file to add your new Plugin to Semantic Kernel. Review the documentation [Adding native plugins](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp) for examples on how to do this
+      ```csharp
+      kernel.Plugins.AddFromObject( new GeocodingPlugin(kernel.Services.GetRequiredService<IHttpClientFactory>(), config), "GeocodingPlugin");
+      ```
 
-* Enable Automatic Function Calling
+  * Run the application and test the Geocoding plugin by submitting the following prompt
 
-    in ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
-
-* Test the AI by asking the bot `What time is it?` again
-
-  Now, the AI should be able to provide the current time by having Semantic Kernel call the ***GetTime*** function in your plugin. The response should be similar to the following:
-
-  ```plaintext
-  The current time is 3:43 PM on August 23, 2024.
-  ```
-
-* Create a plugin to take a user's location and return the Lat/Long coordinates. You can use a geocoding service from [Geocoding API](https://geocode.maps.co/)
-* Create another Plugin that calls a Weather API, and add this to your Semantic Kernel. You can utilize the [Open Meteo API](https://open-meteo.com/en/docs) API here.  Add Methods to your plugin to:
-  * Get the forecast weather at lat/long location and number of days
-  * Get the weather at a lat/long location for a specific date range (archive / historical)
-* Test your Plugins by asking the following question:
+    ```plaintext
+    what are the geo-coordinates for Tampa, FL
+    ```
   
-  ```plaintext
-  What is the weather in San Francisco next Thursday
-  ```
-
-  >NOTE: Not necessarily in the following order, but the AI should perform the following steps to answer the question:
+      The AI should respond with the coordinates for Tampa, similar to the following:
   
-  :one: The AI should ask Semantic Kernel to call the ```GetDate``` function on the Time Plugin to get **today's** date in order to calculate the number of days until **next Thursday**
+      ```plaintext
+      The geo-coordinates for Tampa, FL are approximately:
 
-  :two: Because the Weather Forecast requires a Latitude and Longitude, the AI should instruct Semantic Kernel to call the ```GetLocation``` function on the Geocoding Plugin to get the coordinates for **San Francisco**
+      Latitude: 27.9477595
+      Longitude: -82.458444
+      If you need more specific coordinates or details about a particular location within Tampa, let me know!
+      ```
 
-  :three: Finally, the AI should ask Semantic Kernel to call the ```GetWeatherForecast``` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Thursday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
+* Create a Plugin that calls a Weather API, and add this to the Semantic Kernel. You can utilize the Open Meteo API [Here](https://open-meteo.com/en/docs).  
 
-  :bulb: Set breakpoints in your plugins to verify that the functions are being called correctly and that the data is being passed between the plugins correctly.
+  * Add Methods to your plugin to:
+    1. Get the forecast weather at lat/long location for up to 16 days in the future
+    1. Get the current weather at lat/long location and number of days in the past
+
+  * Test your Plugins by asking the following question:
+  
+    ```plaintext
+    What is the weather in San Francisco next Tuesday
+    ```
+
+    >NOTE: Not necessarily in the following order, but the AI should perform the following plan to answer the question:
+
+    :one: The AI should ask Semantic Kernel to call the ```GetDate``` function on the Time Plugin to get **today's** date in order to calculate the number of days until **next Thursday**
+
+    :two: Because the Weather Forecast requires a Latitude and Longitude, the AI should instruct Semantic Kernel to call the ```GetLocation``` function on the Geocoding Plugin to get the coordinates for **San Francisco**
+
+    :three: Finally, the AI should ask Semantic Kernel to call the ```GetWeatherForecast``` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Thursday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
+
+    :bulb: Set breakpoints in your plugins to verify that the functions are being called correctly and that the data is being passed between the plugins correctly.
+
+    ```mermaid
+    sequenceDiagram
+        participant S as Semantic Kernel
+        participant A as AI
+        S->>A: What is the weather in San Francisco next Tuesday?
+        A-->>S: Call get_date function
+        S->>A: Results of get_date
+        A-->>S: Call day_of_week function
+        S->>A: results of day_of_week
+        A-->>S: Call geocode_address function
+        S->>A: Results of geocode_address
+        A-->>S: Call get_weather with lat/long and days in future
+    ```
+
 
 ## Success Criteria
 
