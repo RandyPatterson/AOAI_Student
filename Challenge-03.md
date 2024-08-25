@@ -18,7 +18,7 @@ Continuing from the previous challenge, navigate to ```.\Resources\src\``` and o
 
 Challenges:
 
-* Launch your AI Chat app, and submit the prompt `What time is it?`
+* **Launch your AI Chat app, and submit the prompt `What time is it?`**
   
     Since the AI does not have the capability to provide real-time information, you will get a response similar to the following:
 
@@ -28,14 +28,14 @@ Challenges:
 
     Let's fix this by creating a plugin that can provide the current time and other related information.
 
-* Create a new class in **./Plugins** directory for your Time Plugin. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
+* **Create a new class in *./Plugins* directory for your Time Plugin**. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
   * Write a time plugin with the following functions
     1. Return the current Date Time
     1. Return the Year for a date passed in as a parameter
     1. Return the Month for a date passed in as a parameter
     1. Return the Day of Week for a date passed in as a parameter
   * Update the application to add your new Plugin to Semantic Kernel
-    
+
     :bulb: Use the provided ```AddPlugins(...)``` method in the **Program.cs** file to add your new Plugin to Semantic Kernel. Review the documentation [Adding native plugins](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp) for examples on how to do this
 
   * Enable Automatic Function Calling
@@ -52,7 +52,7 @@ Challenges:
 
     See the [Success Criteria](#success-criteria) section for additional questions to test your Time Plugin.
 
-* Review the ```GeocodingPlugin.cs``` file located in the ***Plugins*** directory
+* **Review the ```GeocodingPlugin.cs``` file located in the ***Plugins*** directory**
   * Register for a free API key from [Geocoding API](https://geocode.maps.co/) to use in the plugin
   * Update ```appsettings.json``` with your GEOCODING_API_KEY
   * Register the Plugin by adding the following code to the ```AddPlugins(...)``` method in **Program.cs**
@@ -77,7 +77,7 @@ Challenges:
       If you need more specific coordinates or details about a particular location within Tampa, let me know!
       ```
 
-* Create a Plugin that calls a Weather API, and add this to the Semantic Kernel. You can utilize the Open Meteo API [Here](https://open-meteo.com/en/docs).  
+* **Create a Plugin that calls a Weather API, and add it to the Semantic Kernel**. You can utilize the Open Meteo API [Here](https://open-meteo.com/en/docs).  
 
   * Add Methods to your plugin to:
     1. Get the forecast weather at lat/long location for up to 16 days in the future
@@ -96,6 +96,8 @@ Challenges:
     :two: Because the Weather Forecast requires a Latitude and Longitude, the AI should instruct Semantic Kernel to call the ```GetLocation``` function on the Geocoding Plugin to get the coordinates for **San Francisco**
 
     :three: Finally, the AI should ask Semantic Kernel to call the ```GetWeatherForecast``` function on the Weather Plugin passing in the current date/time and Lat/Long to get the weather forecast for **Next Thursday** (expressed as the number of days in the future) at the coordinates for **San Francisco**
+
+    A simplified sequence diagram between Semantic Kernel and AI is shown below:
 
     ```mermaid
     sequenceDiagram
