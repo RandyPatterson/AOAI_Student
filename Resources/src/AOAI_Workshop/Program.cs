@@ -64,7 +64,7 @@ webHostBuilder.Services.AddSingleton<Kernel>(kernel);
 
 
 //Challenge 3: Add Plugins to Semantic Kernel
-await AddPlugins(config, kernel);
+AddPlugins(config, kernel);
 
 var app = webHostBuilder.Build();
 
@@ -124,9 +124,7 @@ static ChatHistory ExtractHistory(ChatRequest chatRequest)
 
 
     
-static async Task<bool> AddPlugins(IConfiguration config, Kernel kernel)
+static void AddPlugins(IConfiguration config, Kernel kernel)
 {
 
-
-    return true;
 }
