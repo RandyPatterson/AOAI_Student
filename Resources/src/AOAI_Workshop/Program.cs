@@ -19,6 +19,7 @@ var webHostBuilder = WebApplication.CreateBuilder(args);
 IConfiguration config = webHostBuilder.Configuration;
 
 // Uncomment this code block to add authentication to the Logic App for CHALLENGE 4
+AuthenticationResult authResult = null;
 /*
 string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
     string TenantId = config["TENANT_ID"]!;
@@ -31,7 +32,6 @@ string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
                 .WithDefaultRedirectUri() // Uses http://localhost for a console app
                 .Build();
 
-    AuthenticationResult authResult = null;
     try
     {
         authResult = await publicClient.AcquireTokenInteractive(Scopes).ExecuteAsync();
@@ -64,7 +64,7 @@ webHostBuilder.Services.AddSingleton<Kernel>(kernel);
 
 
 //Challenge 3: Add Plugins to Semantic Kernel
-await AddPlugins(config, kernel);
+await AddPlugins(config, kernel, authResult);
 
 var app = webHostBuilder.Build();
 
@@ -124,7 +124,7 @@ static ChatHistory ExtractHistory(ChatRequest chatRequest)
 
 
     
-static async Task<bool> AddPlugins(IConfiguration config, Kernel kernel)
+static async Task<bool> AddPlugins(IConfiguration config, Kernel kernel, AuthenticationResult? authResult)
 {
 
 
