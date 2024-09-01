@@ -22,7 +22,6 @@ IConfiguration config = webHostBuilder.Configuration;
 
 AuthenticationResult authResult = null;
 // Uncomment this code block to add authentication to the Logic App for CHALLENGE 4
-AuthenticationResult authResult = null;
 /*
 string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
     string TenantId = config["TENANT_ID"]!;
