@@ -141,6 +141,7 @@ Below is the workflow handled by Semantic Kernel and your plugin:
         deactivate C
 ```
 
+1. Add the plugin to Semantic Kernel using the ```AddPlugins``` method.
 1. Test the Plugin
 
     Set a breakpoint in your plugin to verify that the Contoso search function is being called correctly. Review the incoming query, the generated embedding , and the search results returned from the AI Search Index.

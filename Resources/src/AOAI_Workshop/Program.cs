@@ -102,7 +102,7 @@ app.MapPost("/chat", async (
 
 
         //Challenge 2: return a JSON response that has a single property 'response' with a value containing the response from the LLM
-        //ie: new { response = response[0].Content }
+        //ie: new { response = response.Content }
     });
 
 app.Run();
