@@ -122,7 +122,7 @@ Below is the workflow handled by Semantic Kernel and your plugin:
         participant A as AI
         box Constoso Search Plugin 
         participant P as Plugin
-        participant E as Embeeding
+        participant E as Embedding
         participant Search as Azure AI Search
         end
         C->>S: What are the steps for the Contoso Performance Reviews?

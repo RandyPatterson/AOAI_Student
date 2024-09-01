@@ -43,10 +43,9 @@ Participants will learn how to:
 - [Challenge 04](./Challenge-04.md): Import OpenAPI API as Semantic Kernel Plugin
   - Create a workflow plugin using Logic Apps
   - Import Logic App into Semantic Kernel
-- [Challenge 05](./Challenge-05.md): RAG
-  - Document Chunking
-  - Add [Azure AI Document Intelligence](https://learn.microsoft.com/en-us/azure/ai-services/document-intelligence/overview?view=doc-intel-4.0.0) to parse digital forms??
-  - [Document Intelligence Studio](https://documentintelligence.ai.azure.com/studio)
+- [Challenge 05](Student/Challenge-05.md): Retrieval-Augmented Generation (RAG)
+  - Document Chunking & Embedding
+  - How to incorporate your documents into an AI’s knowledge base
 - [Challenge 06](./Challenge-06.md): Responsible AI
   - What are services and tools to identify and evaluate harms and data leakage in LLMs?
   - What are ways to evaluate truthfulness and reduce hallucinations? What are methods to evaluate a model if you don't have a ground truth dataset for comparison?
@@ -60,10 +59,10 @@ Participants will learn how to:
 - Access to an Azure Subscription
   - If you don't have one, [Sign Up for Azure HERE](https://azure.microsoft.com/en-us/free/) 
 - [Access to Azure OpenAI](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUOFA5Qk1UWDRBMjg0WFhPMkIzTzhKQ1dWNyQlQCN0PWcu)
-- [Access to GitHub Codespaces](https://github.com/signup)
-  - All GitHub users have free access to [GitHub Codespaces](https://docs.github.com/en/codespaces/overview), a cloud-hosted development environment that you access via web browser.
+- [Access to GitHub CodeSpaces](https://github.com/signup)
+  - All GitHub users have free access to [GitHub CodeSpaces](https://docs.github.com/en/codespaces/overview), a cloud-hosted development environment that you access via web browser.
   - If you don't have a GitHub account, [Sign up for GitHub here](https://github.com/signup).
-  - If you use GitHub Codespaces, you do NOT need to install ANY prerequisites on your local workstation!
+  - If you use GitHub CodeSpaces, you do NOT need to install ANY prerequisites on your local workstation!
 
 Students who wish to run this hack from their local workstation will require the following:
 
