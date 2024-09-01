@@ -46,7 +46,7 @@ In the context of RAG, these chunks are used to enhance the AI’s ability to ge
 
 ## Pre-requisites
 
-Completed at least [Challenge 03](./Challenge-03.md) and have a functional version of the solution running in Visual Studio or Visual Studio Code.
+Completed at least [Challenge 03](./Challenge-03.md) and have a functional version of the solution running in Visual Studio or Visual Studio Code and a good understanding about plugins.
 
 ## Introduction
 
@@ -87,8 +87,8 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
     ![vector search](./Resources/images/ch05i03.png)
 
-    * Upload the ```employee_handbook.pdf``` from the **.\data** directory
-    * Set the Search type to **Vector** and the Chunk Size to **1024**
+    * Upload the ```employee_handbook.pdf``` from the **.\data** directory and **click Next**
+    * Set the Search type to **Vector** and the Chunk Size to **1024** then **click Next**
         >:bulb:chunk size refers to how much text is grouped together into a single segment or "chunk" before creating an embedding. When processing large documents, the text is often divided into smaller chunks to create embeddings for each segment. The chunk size determines how much text is included in each embedding.
         >
         >Choosing the right chunk size is important: if chunks are too large, important details might get lost or diluted in the embedding; if too small, the system might miss out on essential context. The chunk size thus impacts the accuracy and relevance of the information retrieved and subsequently used in generating responses
@@ -99,19 +99,19 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
     ![api key](./Resources/images/ch05i05.png)
 
-    Click **Next** and wait for the import to finish
+    :repeat: Click **Next** and wait for the import to finish
 1. Add a Text Embedding model to the reference application
 
-    In the reference application open **Program.cs**. Before you build the kernel, use the **KernelBuilder** object to add the previously deployed Azure OpenAI Text Embedding model to Semantic Kernel.  
+    In the reference application open **Program.cs**. Before the code that builds the kernel, use the **KernelBuilder** object to add the previously deployed Azure OpenAI Text Embedding model to Semantic Kernel.  
 1. Configure AI Search
 
-    *Azure AI Search Vector Store connector* is used to search documents . The connector is configured with the URL and API key of the Azure AI Search service. Refere to the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-ai-search-connector?pivots=programming-language-csharp) for more information on how to configure the connector.  
+    *Azure AI Search Vector Store connector* is used to search documents using [embeddings](#embeddings-in-ai) . The connector is configured with the URL and API key of the Azure AI Search service. Refere to the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-ai-search-connector?pivots=programming-language-csharp) for more information on how to configure the connector.  
 
     :bulb: There are several ways to add the AI Search Connector to Semantic Kernel, you want to follow the instructions using the **kernelBuilder** and the **SearchIndexClient** class.  You will need to use the **SearchIndexClient** class in your Semantic Search Plugin
 
-1. Write the Semantic Search Plugin to query the AI Search Index created earlier.  The Plugin should take the users query and generate an embedding using the Text Embedding model. The embedding should then be used to query the AI Search Index containing the Contoso Handbook PDF and return the most relevant information.
+1. Create a Semantic Search Plugin to query the AI Search Index created earlier. This Plugin should take the users query and generate an embedding using the Text Embedding model. The embedding should then be used to query the AI Search Index containing the Contoso Handbook PDF and return the most relevant information.
 
-Review the Semantic Kernel documentation on [Creating a Retrieval Augmented Generation (RAG) plugin](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/using-data-retrieval-functions-for-rag) for more information on how to create a *Semantic Search* Plugin.
+    :bulb:Review the Semantic Kernel documentation on [Creating a Retrieval Augmented Generation (RAG) plugin](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/using-data-retrieval-functions-for-rag) for more information on how to create a *Semantic Search* Plugin.
 
 Below is the workflow handled by Semantic Kernel and your plugin:
 
@@ -143,7 +143,7 @@ Below is the workflow handled by Semantic Kernel and your plugin:
 
 1. Test the Plugin
 
-    Set breakpoints in your plugins to verify that the functions are being called correctly. Review the incoming query, the embedding generated, and the search results returned from the AI Search Index.
+    Set a breakpoint in your plugin to verify that the Contoso search function is being called correctly. Review the incoming query, the generated embedding , and the search results returned from the AI Search Index.
 
     Test the plugin by running the applications and asking the Chatbot questions about the Contoso Handbook.  The Chatbot should be able to answer questions similiar to the following:
 
