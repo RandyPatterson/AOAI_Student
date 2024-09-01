@@ -101,9 +101,9 @@ Challenges:
 
     ```mermaid
     sequenceDiagram
+        participant C as Client
         participant S as Semantic Kernel
         participant A as AI
-        participant C as Client
         C->>S: What is the weather in San Francisco next Tuesday?
         activate C
         S->>+A: What is the weather in San Francisco next Tuesday?

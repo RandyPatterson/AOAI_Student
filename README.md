@@ -30,16 +30,16 @@ Participants will learn how to:
   - Deploy an Azure OpenAI Model
   - Prompt Engineering
   - What's possible through prompt engineering
+  - System Prompts
   - Best practices when using OpenAI text and chat models
 - [Challenge 02](./Challenge-02.md): Semantic Kernel Fundamentals
-  - Semantic Kernel Fundamentals
   - Connect your OpenAI model using Semantic Kernel
   - Test Your Application
 - [Challenge 03](./Challenge-03.md): Plugins
-  - Functions and Plugins Fundamentals
-  - Creating Semantic Kernel Plugins
-  - Enable auto function calling
-  - What is a Planner
+  - Create 2 plugins and enable auto calling
+  - Create a time plugin to allow time based queries
+  - Add API Plugin (TBD)
+  - Turn on auto function calling
 - [Challenge 04](./Challenge-04.md): Import OpenAPI API as Semantic Kernel Plugin
   - Create a workflow plugin using Logic Apps
   - Import Logic App into Semantic Kernel
@@ -50,11 +50,9 @@ Participants will learn how to:
 - [Challenge 06](./Challenge-06.md): Responsible AI
   - What are services and tools to identify and evaluate harms and data leakage in LLMs?
   - What are ways to evaluate truthfulness and reduce hallucinations? What are methods to evaluate a model if you don't have a ground truth dataset for comparison?
-- [Challenge 07](./Challenge-07.md): Image Generation using DALL-E
-  - Working with Text to Image Models
-  - Creating an Image Generating Plugin
-- [Challenge 08](./Challenge-08.md): Multi-Agents
-  
+- [Challenge 07](./Challenge-07.md): Multi-Agents (Zack) 
+- [Challenge 08](./Challenge-08.md): Image Generation using DALL-E
+
 ## Prerequisites
 
 - Access to an Azure Subscription
@@ -66,14 +64,7 @@ Participants will learn how to:
   - If you use GitHub Codespaces, you do NOT need to install ANY prerequisites on your local workstation!
 
 Students who wish to run this hack from their local workstation will require the following:
-
-- [Visual Studio Code](https://code.visualstudio.com/download)
-  - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
-- Or Visual Studio 2022 +
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Git CLI](https://git-scm.com/downloads)
-- [Azure CLI (Optional)](https://aka.ms/installazurecli)
-- [Student Resources](./Challenge-00.md#student-resources)
+- TBD
 
 ## Contributors
 

@@ -1,3 +1,6 @@
+using AOAI_Workshop;
+using Azure;
+using Azure.Search.Documents.Indexes;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
 using Microsoft.Identity.Client;
@@ -5,21 +8,20 @@ using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using Microsoft.SemanticKernel.Connectors.OpenAI;
 using Microsoft.SemanticKernel.Plugins.OpenApi;
-using Microsoft.SemanticKernel.Plugins.Web;
-using Microsoft.SemanticKernel.Plugins.Web.Bing;
 using System.Net.Http.Headers;
-using YamlDotNet.Serialization;
+
 
 #pragma warning disable SKEXP0001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 #pragma warning disable SKEXP0050 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 #pragma warning disable SKEXP0010 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 #pragma warning disable SKEXP0040 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
+#pragma warning disable SKEXP0020 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
 
 var webHostBuilder = WebApplication.CreateBuilder(args);
 IConfiguration config = webHostBuilder.Configuration;
 
-// Uncomment this code block to add authentication to the Logic App for CHALLENGE 4
 AuthenticationResult authResult = null;
+// Uncomment this code block to add authentication to the Logic App for CHALLENGE 4
 /*
 string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
     string TenantId = config["TENANT_ID"]!;
@@ -85,26 +87,23 @@ app.MapPost("/chat", async (
     [FromBody] ChatRequest chatRequest,
     [FromServices] Kernel kernel) => {
 
-    if (chatRequest == null || kernel == null) {
-        context.Response.StatusCode = 400; // Bad Request
-        return;
-    }
-    //Convert chat history from client to Semantic Kernel ChatHistory collection
-    var chatHistory = ExtractHistory(chatRequest);
-    
-    //Challenge 2: add current prompt to chatHistory
+
+        //Convert chat history from client to Semantic Kernel ChatHistory collection
+        var chatHistory = ExtractHistory(chatRequest);
+
+        //Challenge 2: add current prompt to chatHistory
 
 
-    //Challenge 2: Get the chat completion service from Semantic Kernel
+        //Challenge 2: Get the chat completion service from Semantic Kernel
 
-    //Challenge 3: Configure the execution settings for the OpenAI chat completion
+        //Challenge 3: Configure the execution settings for the OpenAI chat completion
 
-    //Challenge 2: Get the response from the AI
+        //Challenge 2: Get the response from the AI
 
-    
-    //Challenge 2: return a JSON response that has a single property 'response' with a value containing the response from the LLM
-    //ie: new { response = response[0].Content }
-});
+
+        //Challenge 2: return a JSON response that has a single property 'response' with a value containing the response from the LLM
+        //ie: new { response = response[0].Content }
+    });
 
 app.Run();
 
@@ -123,7 +122,7 @@ static ChatHistory ExtractHistory(ChatRequest chatRequest)
 }
 
 
-    
+
 static async Task<bool> AddPlugins(IConfiguration config, Kernel kernel, AuthenticationResult? authResult)
 {
 

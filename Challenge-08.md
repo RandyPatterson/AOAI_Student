@@ -1,8 +1,8 @@
-[< Previous Challenge](./Challenge-06.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-08.md)
+[< Previous Challenge](./Challenge-07.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-09.md)
 
 ---
 
-# Challenge 07 - Image Generation using DALL-E
+# Challenge 08 - Image Generation using DALL-E
 
 ## Introduction
 
@@ -84,3 +84,5 @@ In this challenge, you will deploy an Azure OpenAI service capable of hosting DA
 [Semantic Kernel Samples](https://learn.microsoft.com/en-us/semantic-kernel/get-started/detailed-samples?pivots=programming-language-csharp)
 
 [Add native code as a plugin to Semantic Kernel](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp)
+
+ 
