@@ -45,7 +45,7 @@ Participants will learn how to:
   - Import Logic App into Semantic Kernel
 - [Challenge 05](Student/Challenge-05.md): Retrieval-Augmented Generation (RAG)
   - Document Chunking & Embedding
-  - How to incorporate your documents into an AI’s knowledge base
+  - Enhance AI responses by searching external sources
 - [Challenge 06](./Challenge-06.md): Responsible AI
   - What are services and tools to identify and evaluate harms and data leakage in LLMs?
   - What are ways to evaluate truthfulness and reduce hallucinations? What are methods to evaluate a model if you don't have a ground truth dataset for comparison?
