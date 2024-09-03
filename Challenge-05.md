@@ -63,7 +63,11 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
       "AI_SEARCH_KEY":  "Replace with your AI Search API Key"
     ```
 
-1. Using [Azure AI Studio](https://oai.azure.com/), deploy a *Standard* **text-embedding-ada-002** model in the same deployment as your previous GPT-4o model
+1. Using [Azure AI Studio](https://oai.azure.com/), deploy a *Standard* **text-embedding-ada-002** model in the same deployment as your previous GPT-4o model. Once deployed, add the **Model Name** to the **appsettings.json** file in the reference application. You will need this value later when configuring the Semantic Search Plugin.
+
+    ```json
+    "EMBEDDINGS_DEPLOYMODEL": "text-embedding-ada-002"    
+    ```
 
     :bulb: This model will be used to translate your private documents into embeddings (see above)
 
