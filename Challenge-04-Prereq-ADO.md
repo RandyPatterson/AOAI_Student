@@ -33,9 +33,22 @@
 
 1. Once this is done, click on `Navigate to project`.
 
+### Create Query for Work Items
+
+1. Click on `Boards` then `Queries`.
+1. Click on `New Query`.
+1. Name the query `My Work Items`.
+1. Click on `Add clause` and select `Assigned To` and `@Me`.
+1. Click on `Save query`.
+
+1. Final Result:
+
+    <img src="./Resources/images/ADOQuery.png" alt="drawing" width="60%"/>
+
 ## Success Criteria
 
 1. Verify that you can navigate to the the new project in Azure DevOps.
 1. Verify that the project has mock work items, repos, pipelines, and boards.
+1. Verify that you created a query for work items.
 
 Back to [Challenge 04](./Challenge-04.md) - **[Home](../README.md)**

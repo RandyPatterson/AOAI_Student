@@ -27,8 +27,6 @@ This challenge will introduce you to how to import OpenAPI API as Semantic Kerne
 ## Success Criteria
 
 1. Your chat bot should be able to answer the question "What are my work items?" with a list of work items from Azure DevOps.
-1. You have a total of 3 Logic App Workflows imported into your Semantic Kernel. One from the pre-req and two new ones.
-1. Your chat bot should be able chain together at least 1 additional Logic App Workflow to the prereq plugin to create a more complex conversation.
 
 ## Learning Resources
 

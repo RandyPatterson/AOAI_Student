@@ -8,7 +8,7 @@
 
 1. Open the Azure Portal and search for `Logic App` in the search bar.
 1. Click on `Logic Apps` and Add a new Logic App.
-1. Use the default settings and click on `Select`.
+1. Under the  `Standard` section select `Workflow Service Plan` and click on `Select`.
 1. Place it in the same resource group as Azure Open AI resource.
 1. Create a new Windows Plan.
 1. Pick a location and click on `Review + Create` then `Create`.
