@@ -14,7 +14,7 @@ In this challenge, you will configure the reference application to use your Azur
 
 1. From the project root directory navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code.
 
-1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Enter** key. Currently, the application will respond with an error message because the AI Model has not been configured. 
+1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure Open AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Enter** key. Currently, the application will respond with an error message because the AI Model has not been configured. 
 
     <img src="./Resources/images/ch02i01.png" width="75%">
 
@@ -48,7 +48,7 @@ In this challenge, you will configure the reference application to use your Azur
 
 ## Challenges
 
-1. Deploy a ***Standard*** GTP-4o model using  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
+1. Deploy a ***Standard*** GTP-4o model using  [Azure Open AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
 
 1. Update the *appsettings.json* file with the Azure OpenAI *Deployment name*, *Endpoint URL* and the *API Key*. These values can be found in the Azure OpenAI Studio.
 

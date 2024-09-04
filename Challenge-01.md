@@ -4,7 +4,7 @@
 
 ## Introduction
 
-The first step in understanding Azure OpenAI is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure OpenAI and how it can be used to build powerful AI infused applications. You will deploy a GPT-3.5 model and use the Azure AI Studio to interact with the model.
+The first step in understanding Azure OpenAI is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure OpenAI and how it can be used to build powerful AI infused applications. You will deploy a GPT-3.5 model and use the Azure Open AI Studio to interact with the model.
 
 ## Setup Azure OpenAI
 
@@ -13,7 +13,7 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
 ## Challenges
 
-* Using the Azure AI Studio, craft a chat prompt to return a United States Postal Service formatted address from the following email
+* Using the Azure Open AI Studio, craft a chat prompt to return a United States Postal Service formatted address from the following email
 
     ```plaintext
         Subject: Elevate Your Brand with Our Comprehensive Marketing Solutions! 
@@ -34,7 +34,7 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
 * Start a new chat and using the same email from the previous challenge, craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]` where category is the PII category found in the email.
 
-* Start a new chat and enter the following prompt into the Azure AI Studio and observe the results
+* Start a new chat and enter the following prompt into the Azure Open AI Studio and observe the results
 
     ```text
     A coin is heads up. Maybelle flips the coin over. Shalonda flips the coin over. Is the coin still heads up? 
@@ -46,8 +46,8 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
 ## Success Criteria
 
-1. Verify that you deployed a Standard GRP 3.5 model using Azure AI Studio
-1. Verify that you can access the Azure AI Studio and create a new chat
+1. Verify that you deployed a Standard GRP 3.5 model using Azure Open AI Studio
+1. Verify that you can access the Azure Open AI Studio and create a new chat
 1. Verify that you can craft a prompt to return a United States Postal Service formatted address from the provided email
 1. Verify that you can craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]`
 1. Verify that you can craft a prompt to compel the AI to keep track of state changes.
