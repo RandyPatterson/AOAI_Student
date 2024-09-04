@@ -10,7 +10,7 @@ Content filters are essential in ensuring that your AI models meet your organiza
 
 ## Pre-requisites
 
-1. [Access to Azure OpenAI Studio](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/access-studio) (See step 1 below)
+1. [Access to Azure OpenAI Studio](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/how-to/access-studio) (See step 1 below).
 2. An Azure OpenAI resource created in an earlier challenge.
 
 > NOTE: Make sure you have access to the Azure OpenAI Studio and an existing Azure OpenAI resource, as these are required to complete this challenge.
@@ -22,8 +22,8 @@ This challenge will guide you through configuring and testing content filters us
 ### Navigate to Azure OpenAI Studio
 
 - **Azure Portal**
-	- Navigate to your already-created Open AI resource in the Azure Portal
-	- At the bottom of the overview page, click the button for "Go to Azure OpenAI Studio"
+	- Navigate to your already-created Open AI resource in the Azure Portal.
+	- At the bottom of the overview page, click the button for "Go to Azure OpenAI Studio".
 	 <img src="./Resources/images/aoai-studio-button.png" alt="aoai-studio-button" width="30%"/>
 - **Direct link:** https://oai.azure.com/
 
@@ -31,7 +31,7 @@ This challenge will guide you through configuring and testing content filters us
 ### Adjust Filter Settings
 
 1. Navigate to the "**Content Filters**" tab at the lower left.
-1. Click "**Create content filter**", then enter a name for your new filter
+1. Click "**Create content filter**", then enter a name for your new filter.
 
 	<img src="./Resources/images/filter-name.png" alt="aoai-filter-name" width="60%"/>
 
@@ -48,11 +48,11 @@ This challenge will guide you through configuring and testing content filters us
 
 
 ### Filter specific words or patterns
->**Blocklists** can be used to create a custom filter to block a specific word or phrase that you believe should be filtered in your application
-1. Return to the **Content filters** tab, then on the resulting screen, click the Blocklists (Preview) tab
+>**Blocklists** can be used to create a custom filter to block a specific word or phrase that you believe should be filtered in your application.
+1. Return to the **Content filters** tab, then on the resulting screen, click the Blocklists (Preview) tab.
 	<img src="./Resources/images/filter-blocklists.png" alt="aoai-filter-deployment-list" width="60%"/>
-1. Click **Create blocklist**, then enter a name & description *(optional)*
-1. After you are returned to the list, click the newly created blocklist to access the term list
+1. Click **Create blocklist**, then enter a name & description *(optional)*.
+1. After you are returned to the list, click the newly created blocklist to access the term list.
 	<img src="./Resources/images/filter-blocklist-term.png" alt="aoai-filter-name" width="60%"/>
 	- Proceed to add a term you would like to be excluded. You could use a random test word like "unicorn", or something more realistic—like "social security number."
 	- It also supports using regex to generically filter input that matches a predefined pattern.
@@ -65,8 +65,8 @@ This challenge will guide you through configuring and testing content filters us
 ## Success Criteria
 
 1. You have successfully navigated the Azure OpenAI Studio and adjusted the default content filter settings.
-2. You experimented and observed the results of different filter settings
-3. You created and tested a custom blocklist to filter specific terms, phrases, or patterns
+2. You experimented and observed the results of different filter settings.
+3. You created and tested a custom blocklist to filter specific terms, phrases, or patterns.
 
 ## Learning Resources
 
