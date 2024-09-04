@@ -35,7 +35,7 @@ Let's get started with a pre-configured GitHub CodeSpaces: [Launch CodeSpaces](h
 
 Using your local workstation is another option to complete the challenges. You will need to set up the necessary tools and resources on your local workstation to complete the challenges and will need to clone the Student Resources Git Repository to your local workstation.
 
-##### Install the following tools on your local workstation:
+##### Install the following tools on your Local Workstation:
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
   - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
@@ -44,16 +44,14 @@ Using your local workstation is another option to complete the challenges. You w
 - [Git CLI](https://git-scm.com/downloads)
 - [Azure CLI (Optional)](https://aka.ms/installazurecli)
 - [Student Resources](#student-resources)
+ 
+##### Clone the Student Resources to your Local Workstation
 
-##### Clone the Student Resources to your local workstation
+From a directory where you want to store the resources, clone the [repository](https://github.com/RandyPatterson/AOAI_Student). You can do this by running the following command in your terminal or command prompt:
 
-- [Git Repo Student Resources](https://github.com/RandyPatterson/AOAI_Student)
-
-From a directory where you want to store the resources, clone the repository:
-
-```powershell
-git clone https://github.com/RandyPatterson/AOAI_Student.git
-```
+  ```powershell
+  git clone https://github.com/RandyPatterson/AOAI_Student.git
+  ```
 
 The rest of the challenges will refer to the relative paths inside the Git Repository where you can find the various resources to complete the challenges.
 
@@ -76,7 +74,7 @@ To complete this challenge successfully, you should be able to:
               └───Properties
   ```
 
-### If working on a local workstation
+### If working on a Local Workstation
 
 - Verify that you have **Visual Studio Code** with the ***C# Dev Kit*** Extension installed or **Visual Studio 2022**
 - Verify you have the following files & folders locally:
@@ -91,9 +89,5 @@ To complete this challenge successfully, you should be able to:
               ├───Plugins
               └───Properties
   ```
-
-## Learning Resources
-
-- [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview)
 
 ### **[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
