@@ -4,7 +4,9 @@
 
 ## Introduction
 
-Sometimes it's necessary to make your chat agents own a much more narrow area of responsibility to improve the results of the solution. This is where Multi-agent systems can help. We can create a persona for each agent, and give them seperate instructions. This allows us to narrow the scope of the expertise each agent has to own. This is also known as a "Mixture of Experts" solution. Each agent will own a part of the answer to the user's question. That agent can communicate with other agents in turn, and together they can come up with a more complete answer to the user's question, than if you used a single agent alone.
+Multi-Agent Systems (MAS) consist of multiple autonomous agents, each with distinct goals, behaviors, and areas of responsibility. These agents can interact with each other, either cooperating or competing, depending on the objectives they are designed to achieve. In MAS, each agent operates independently, making decisions based on its local knowledge and the environment, but they can communicate and share information to solve complex problems collectively.
+
+MAS is often used in scenarios where tasks are distributed across different entities, and the overall system benefits from decentralization. Examples include simulations of real-world systems like traffic management, robotic teams, distributed AI applications, or networked systems where agents need to coordinate actions without a central controller. MAS allows for flexibility, scalability, and adaptability in solving dynamic and complex problems where a single agent or centralized system might be less efficient or incapable of handling the complexity on its own.
 
 ## Description
 
@@ -74,7 +76,7 @@ to the Software Engineer or Business Analyst with details of the defect.
 
 ## Learning Resources
 
-- [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-agent Framework. Great example of what a complex multi-agent system can do
+- [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-agent Framework. Great example of what a complex multi-agent system can do.
 - [AutoGen Multi-Agent Conversational Framework](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat/) - Multi-agent Framework for conversational patterns. Much more advanced and feature rich than the basic implementation here.
 - [AutoGen with Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/autogen-agents-meet-semantic-kernel/#:~:text=In%20this%20blog%20post,%20we%20show%20you%20how%20you%20can) Integrating AutoGen and Semantic Kernel to build advanced multi-agent systems.
 
