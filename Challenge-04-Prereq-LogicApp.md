@@ -1,4 +1,4 @@
-[< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
+### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
 
 # Challenge 04 Pre-requisites - Setup Azure Logic Apps
 
@@ -191,4 +191,4 @@
 
 Back to [Challenge 04](./Challenge-04.md) - **[Home](../README.md)**
 
-[< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
+### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()

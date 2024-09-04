@@ -1,4 +1,4 @@
-[< Previous Challenge](./Challenge-04.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-06.md)
+### [< Previous Challenge](./Challenge-04.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-06.md)
 
 # Challenge 05 -  Retrieval-Augmented Generation (RAG)
 
@@ -175,4 +175,4 @@ Below is the workflow handled by Semantic Kernel and your plugin:
 * Delete the AI Search Index and re-upload the Employee Handbook PDF changing the **chunk size**. Experiment with different chunk sizes and see how it affects the search results.
 * Update the Semantic Search Plugin to return the top 3 most relevant search results, instead of just the top result.
 
-[< Previous Challenge](./Challenge-04.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-06.md)
+### [< Previous Challenge](./Challenge-04.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-06.md)

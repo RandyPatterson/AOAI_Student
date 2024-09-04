@@ -1,4 +1,4 @@
-**[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
+### **[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
 
 # Challenge 00 - Prerequisites - Ready, Set, GO!
 
@@ -94,4 +94,4 @@ To complete this challenge successfully, you should be able to:
 
 - [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview)
 
-**[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
+### **[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
