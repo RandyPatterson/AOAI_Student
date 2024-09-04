@@ -8,7 +8,7 @@ The first step in understanding Azure OpenAI and Semantic Kernel is to become fa
 
 ## Description
 
-In this challenge, you will configure the reference application to use your Azure OpenAI GPT-4o model and finish the implementation of the chat API to respond to user prompts.
+In this challenge, you will be provide a starter application that will require you to complete the implementation of the chat API. You will configure the reference application to use the Azure OpenAI GPT-4o model.
 
 ## Getting Familiar With the Reference Application
 

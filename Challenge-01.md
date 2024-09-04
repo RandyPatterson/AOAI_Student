@@ -46,11 +46,11 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
 ## Success Criteria
 
-1. Verify that you deployed a Standard GPT 3.5 model using Azure Open AI Studio
+1. Verify that you deployed a Standard GPT-3.5 model using Azure Open AI Studio
 1. Verify that you can access the Azure Open AI Studio and create a new chat
 1. Verify that you can craft a prompt to return a United States Postal Service formatted address from the provided email
 1. Verify that you can craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]`
-1. Verify that you can craft a prompt to compel the AI to keep track of state changes.
+1. Verify that you can craft a prompt to compel the AI to keep track of state changes
 
 ## Learning Resources
 
