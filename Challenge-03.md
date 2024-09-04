@@ -124,19 +124,16 @@ Challenges:
 
 ## Success Criteria
 
-To complete this challenge successfully, the AI should be able to answer the following questions correctly:
-
-* What time is it?
-* What was the date 4 days ago?
-* What is the day of the week for the last day of next month?
-* What day of the week does today's date next year fall on?
-
-In addition, you should have a second plugin that can can answer questions around the weather. You should now be able to get the Chatbot to answer the following questions:
-
-* What is today's weather in San Francisco?
-* Is it going to rain next week?
-* What's the high temp going to be today?
-* Do I need a raincoat for my movie date Friday?
+1. To complete this challenge successfully, the AI should be able to answer the following questions correctly:
+   * What time is it?
+   * What was the date 4 days ago?
+   * What is the day of the week for the last day of next month?
+   * What day of the week does today's date next year fall on?
+2. In addition, you should have a second plugin that can can answer questions around the weather. You should now be able to get the Chatbot to answer the following questions:
+    * What is today's weather in San Francisco?
+    * Is it going to rain next week?
+    * What's the high temp going to be today?
+    * Do I need a raincoat for my movie date Friday?
 
 ## Learning Resources
 
