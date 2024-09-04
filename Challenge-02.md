@@ -56,7 +56,7 @@ In this challenge, you will be provided with a starter application that will req
 
 ## Challenges
 
-1. Deploy a ***Standard*** GTP-4o model using  [Azure Open AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed later when configuring Semantic Kernel.
+1. Deploy a ***Standard*** GTP-4o model using  [Azure Open AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed next when configuring Semantic Kernel.
 
 1. Update the *appsettings.json* file with the Azure OpenAI *Deployment name*, *Endpoint URL* and the *API Key*. These values can be found in the Azure OpenAI Studio.
 
@@ -77,8 +77,6 @@ In this challenge, you will be provided with a starter application that will req
     HttpContext context,
     [FromBody] ChatRequest chatRequest,
     [FromServices] Kernel kernel) => {
-
-    //removed for brevity
 
     //Convert chat history from client to Semantic Kernel ChatHistory collection
     var chatHistory = ExtractHistory(chatRequest);
@@ -120,7 +118,7 @@ In this challenge, you will be provided with a starter application that will req
 ## Success Criteria
 
 1. Verify that you deployed a Standard GPT-4o
-1. Updated *appsettins.json* file with the correct values for Azure OpenAI GPT-4o model.
+1. Updated *appsettings.json* file with the correct values for Azure OpenAI GPT-4o model.
 1. The application runs and responds to users questions
 1. The chat history is working as expected
 
