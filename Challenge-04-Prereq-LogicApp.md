@@ -1,4 +1,4 @@
-[< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()  
+[< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
 
 # Challenge 04 Pre-requisites - Setup Azure Logic Apps
 
@@ -190,3 +190,5 @@
 1. Successfully call the Logic App from a browser or HTTP client like Postman.
 
 Back to [Challenge 04](./Challenge-04.md) - **[Home](../README.md)**
+
+[< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()

@@ -112,3 +112,5 @@ kernelBuilder.Services.AddSingleton<IPromptRenderFilter, FilterExample>();
 ```
 
 3. Whenever a prompt is invoked via a supported Invoke method, the filter code will be ran before the prompt is processed. When the condition matches, we override the value Context.Result, resulting in the new sensitive content message being returned to the user.
+
+[< Previous Challenge](./Challenge-05.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-07.md)

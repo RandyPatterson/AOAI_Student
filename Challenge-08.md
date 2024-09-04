@@ -1,7 +1,5 @@
 [< Previous Challenge](./Challenge-07.md) - **[Home](./README.md)**
 
----
-
 # Challenge 08 - Multi-Agent System
 
 ## Introduction
@@ -79,3 +77,5 @@ to the Software Engineer or Business Analyst with details of the defect.
 - [MetaGPT](https://github.com/geekan/MetaGPT) - Multi-agent Framework. Great example of what a complex multi-agent system can do
 - [AutoGen Multi-Agent Conversational Framework](https://microsoft.github.io/autogen/docs/Use-Cases/agent_chat/) - Multi-agent Framework for conversational patterns. Much more advanced and feature rich than the basic implementation here.
 - [AutoGen with Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/autogen-agents-meet-semantic-kernel/#:~:text=In%20this%20blog%20post,%20we%20show%20you%20how%20you%20can) Integrating AutoGen and Semantic Kernel to build advanced multi-agent systems.
+
+[< Previous Challenge](./Challenge-07.md) - **[Home](./README.md)**
