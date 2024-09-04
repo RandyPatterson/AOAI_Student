@@ -187,6 +187,4 @@
 1. Successfully create a new Logic App in the Azure Portal.
 1. Successfully call the Logic App from a browser or HTTP client like Postman.
 
-Back to [Challenge 04](./Challenge-04.md) - **[Home](../README.md)**
-
 ### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
