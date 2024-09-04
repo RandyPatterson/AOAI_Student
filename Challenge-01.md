@@ -4,18 +4,14 @@
 
 ## Introduction
 
-The first step in understanding Azure OpenAI and Semantic Kernel is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure OpenAI and how it can be used to build powerful AI infused applications. You will also explore chat services offered by Azure OpenAI and how prompt engineering can be leveraged to solve real-world problems.
+The first step in understanding Azure OpenAI is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure OpenAI and how it can be used to build powerful AI infused applications. You will deploy a GPT-3.5 model and use the Azure AI Studio to interact with the model.
 
-## Description
-
-Use your local workstation and login to your Azure Account
-
-### Setup Azure OpenAI
+## Setup Azure OpenAI
 
 1. Navigate to  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com` and login with your Azure credentials
 2. Deploy a ***Standard GPT3.5*** model (version **0613** or greater) in a region that can host GTP-3.5, GPT-4o and DALL-E models
 
-### Challenges
+## Challenges
 
 * Using the Azure AI Studio, craft a chat prompt to return a United States Postal Service formatted address from the following email
 
