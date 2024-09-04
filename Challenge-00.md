@@ -8,10 +8,7 @@ Thank you for participating in the OpenAI & Semantic Kernel Fundamentals What Th
 
 ## Description
 
-In this challenge, you will set up the necessary prerequisites and environment to complete the rest of the hack, including:
-
-- [Access Azure OpenAI](#access-azure-openai)
-- [GitHub CodeSpaces](#setup-github-codespace) or [Local Workstation](#use-local-workstation)
+In this challenge, you will set up the necessary prerequisites and environment to complete the rest of the hack.
 
 ### Access Azure OpenAI
 
@@ -28,18 +25,13 @@ You will need a development environment to complete the challenges. You can use 
 - [GitHub CodeSpaces](#github-codespaces)
 - [Local Workstation](#use-local-workstation)
 
+#### GitHub CodeSpaces
 
-### GitHub CodeSpaces
+GitHub CodeSpaces is a cloud-based development environment that allows you to develop entirely in the cloud. It provides a fully configured environment with all the tools and resources you need to complete the challenges. If you want to learn more about GitHub CodeSpaces, you can visit the [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview). However we provide you with a pre-configured GitHub CodeSpaces for this hack.
 
-GitHub CodeSpaces is a cloud-based development environment that allows you to develop entirely in the cloud. It provides a fully configured environment with all the tools and resources you need to complete the challenges. If you want to learn more about GitHub CodeSpaces, you can visit the [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview). However we provide you with a pre-configured GitHub CodeSpace for this hack.
-
-Let's get started with a pre-configured GitHub CodeSpace: [Launch CodeSpaces](https://open.vscode.dev/RandyPatterson/AOAI_Student)
+Let's get started with a pre-configured GitHub CodeSpaces: [Launch CodeSpaces](https://open.vscode.dev/RandyPatterson/AOAI_Student)
 
 #### Use Local Workstation
-
-**NOTE:** You can skip this section if are using GitHub CodeSpaces!
-
-##### Local Workstation Requirements
 
 To work on your local workstation, please ensure you have the following tools and resources before hacking:
 
@@ -51,7 +43,7 @@ To work on your local workstation, please ensure you have the following tools an
 - [Azure CLI (Optional)](https://aka.ms/installazurecli)
 - [Student Resources](#student-resources)
 
-### Student Resources
+##### Student Resources
 
 [Git Repo Student Resources](https://github.com/RandyPatterson/AOAI_Student)
 
