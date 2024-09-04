@@ -1,6 +1,6 @@
 # Challenge 00 - Prerequisites - Ready, Set, GO!
 
-**[Home](../README.md)** - [Next Challenge >](./Challenge-01.md)
+**[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
 
 ## Introduction
 
@@ -29,7 +29,7 @@ You will need a development environment to complete the challenges. You can use 
 
 GitHub CodeSpaces is a cloud-based development environment that allows you to develop entirely in the cloud. It provides a fully configured environment with all the tools and resources you need to complete the challenges. If you want to learn more about GitHub CodeSpaces, you can visit the [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview). However we provide you with a pre-configured GitHub CodeSpaces for this hack.
 
-Let's get started with a pre-configured GitHub CodeSpaces: [Launch CodeSpaces](https://open.vscode.dev/RandyPatterson/AOAI_Student)
+Let's get started with a pre-configured GitHub CodeSpaces: [Launch CodeSpaces](https://codespaces.new/RandyPatterson/AOAI_Student)
 
 #### Use Local Workstation
 
