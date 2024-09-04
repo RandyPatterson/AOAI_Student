@@ -45,14 +45,14 @@ In this challenge, you will be provided with a starter application that will req
 
     The **AddAzureOpenAIChatCompletion** method takes three parameters: the deployment model name, the endpoint URL, and the API key. These values are read from the *appsettings.json* file. Next, some additional services are added and logging is configured. Finally, the **Kernel** object is built and the application is started.
 
-Find the endpoint ```/chat```. This endpoint is where the user's prompt is received and sent to the AI model for processing. The AI response is then sent back to the user. The Kernel object we just created is passed to the handler so that it can be used to interact with the AI model. In the remaining tasks in this challenge you will complete the implementation of the ```/chat``` endpoint.
+    Find the endpoint ```/chat```. This endpoint is where the user's prompt is received and sent to the AI model for processing. The AI response is then sent back to the user. The Kernel object we just created is passed to the handler so that it can be used to interact with the AI model. In the remaining tasks in this challenge you will complete the implementation of the ```/chat``` endpoint.
 
-```csharp
-app.MapPost("/chat", async (
-    HttpContext context,
-    [FromBody] ChatRequest chatRequest,
-    [FromServices] Kernel kernel) => {
-```
+    ```csharp
+    app.MapPost("/chat", async (
+        HttpContext context,
+        [FromBody] ChatRequest chatRequest,
+        [FromServices] Kernel kernel) => {
+    ```
 
 ## Challenges
 
