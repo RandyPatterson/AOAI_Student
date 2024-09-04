@@ -16,7 +16,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. First, we're going to open the AOAI_Workshop.Console app. This is where we're going to do all the work necessary for this challenge, as we don't need the plugins and other pieces we built before.
 
-2. Open the User Secrets for the AOAI_Workshop.Console app. Add in your Azure OpenAI details that you used in the previous exercises. Ensure that the following details are set. We recommend using the gpt-4o model for this excercise, though it will work with other models:
+2. Open the User Secrets for the AOAI_Workshop.Console app. Copy settings from the AOAI_Workshop ```appsettings.json``` file to the **AOAI_Workshop.Console** ```appsettings.json``` file. Ensure that the following details are set. We recommend using the gpt-4o model for this excercise, though it will work with other models:
 
 ```json
 {
@@ -26,7 +26,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 }
 ```
 
-1. Open the `Program.cs` file. The first thing we need to do is create the personas for our 3 agents. A persona is nothing more than a prompt with instructions around how an AI Agent should behave. We're going to use the following 3 persona's.
+3. Open the `Program.cs` file. The first thing we need to do is create the personas for our 3 agents. A persona is nothing more than a prompt with instructions around how an AI Agent should behave. We're going to use the following 3 personas.
 
 ```prompt
 You are a Business Analyst which will take the requirements from the user (also known as a 'customer')
@@ -69,10 +69,10 @@ to the Software Engineer or Business Analyst with details of the defect.
 
 ### Success Criteria
 
-- You have a console app that will write out the following from a conversation with 3 AI Agents:
-   1. Software Development Plan and Requirements
-   2. Source Code in HTML and Javascript
-   3. Code Review and Approval
+1. You have a console app that will write out the following from a conversation with 3 AI Agents:
+   - Software Development Plan and Requirements
+   - Source Code in HTML and Javascript
+   - Code Review and Approval
 
 ## Learning Resources
 
