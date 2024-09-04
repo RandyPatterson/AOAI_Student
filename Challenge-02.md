@@ -14,7 +14,7 @@ In this challenge, you will be provided with a starter application that will req
 
 1. From the project root directory navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code. If you are using Visual Studio open the solution file ```AOAIWorkshop.sln```. If you are using Visual Studio Code, Navigate to the folder ```AOAIWorkshop```.
 
-1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure Open AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Enter** key. Currently, the application will respond with an error message because the AI Model has not been configured.
+1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure Open AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Send** key. Currently, the application will respond with an error message because the AI Model has not been configured.
 
     <img src="./Resources/images/ch02i01.png" width="75%">
 
@@ -28,7 +28,7 @@ In this challenge, you will be provided with a starter application that will req
 
 1. Open the ```.\AOAI_Workshop\Program.cs``` file
 
-    At the heart of the Semantic Kernel framework is the **Kernel** object. Here is where you register the AI Models you will be working with and any Plugins you be using in your application. You will learn about Plugins in later challenges. The **Kernel** object is also where you can configure the AI Models you will be using.
+    At the heart of the Semantic Kernel framework is the **Kernel** object. Here is where you register the AI Models you will be working with and any Plugins you will be using in your application. You will learn about Plugins in later challenges.
 
     The Kernel object is being configured to use an Azure OpenAI chat model by calling the ```AddAzureOpenAIChatCompletion``` method of the Kernel Builder class.  
 
@@ -56,7 +56,7 @@ In this challenge, you will be provided with a starter application that will req
 
 ## Challenges
 
-1. Deploy a ***Standard*** GTP-4o model using  [Azure Open AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gtp-4o```, this name will be needed next when configuring Semantic Kernel.
+1. Deploy a ***Standard*** GTP-4o model using  [Azure Open AI Studio](https://oai.azure.com) `https://oai.azure.com`. The **Deployment name** should be something similar to ```gpt-4o```. This name will be needed next when configuring Semantic Kernel.
 
 1. Update the *appsettings.json* file with the Azure OpenAI *Deployment name*, *Endpoint URL* and the *API Key*. These values can be found in the Azure OpenAI Studio.
 
@@ -68,7 +68,7 @@ In this challenge, you will be provided with a starter application that will req
     "AOI_API_KEY": "Replace with your AOI API key",
     ```
 
-1. Add the **users message** to the chat history collection.
+1. Add the **user's message** to the chat history collection.
 
     In the `Program.cs` file, find the handler for the `/chat` POST request. Below the comment `//Challenge 2: add current prompt to chatHistory`, add the user's prompt from the `ChatRequest` object to the chat history collection.
 
@@ -80,8 +80,6 @@ In this challenge, you will be provided with a starter application that will req
 
     //Convert chat history from client to Semantic Kernel ChatHistory collection
     var chatHistory = ExtractHistory(chatRequest);
-    
-    //Challenge 2: add current prompt to chatHistory
     ```
 
     :bulb:For a detailed explanation of Chat History, please refer to the documentation [here](https://learn.microsoft.com/en-us/semantic-kernel/concepts/ai-services/chat-completion/chat-history?pivots=programming-language-csharp).
@@ -118,7 +116,7 @@ In this challenge, you will be provided with a starter application that will req
 ## Success Criteria
 
 1. Verify that you deployed a Standard GPT-4o
-1. Updated *appsettings.json* file with the correct values for Azure OpenAI GPT-4o model.
+1. Updated *appsettings.json* file with the correct values for Azure OpenAI GPT-4o model
 1. The application runs and responds to users questions
 1. The chat history is working as expected
 

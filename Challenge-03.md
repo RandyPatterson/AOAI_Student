@@ -8,13 +8,13 @@ Completed [Challenge 02](./Challenge-02.md) and have a functional version of the
 
 ## Introduction
 
-Semantic Kernel starts to really show it's value in LLM development when you add plugins. Plugins are a way to give the AI extra capabilities and knowledge that cannot be trained into the model. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
+Semantic Kernel starts to really show it's value in LLM development when you add plugins. Plugins are a way to give the AI extra capabilities and knowledge that cannot be baked into the model. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
 
 ## Description
 
-This challenge will introduce you to building Semantic Kernels Plugins in C#, and how to chain plugins using the Auto Function Calling capabilities of Semantic Kernel.
+This challenge will introduce you to building Semantic Kernel Plugins in C#, and how to chain plugins using the Auto Function Calling capabilities of Semantic Kernel.
 
-Continuing from the previous challenge, navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code.
+Continuing from the previous challenge, navigate to ```.\Resources\src\AOAI_Workshop``` and open the provided application in Visual Studio or Visual Studio Code.
 
 Challenges:
 
@@ -40,7 +40,7 @@ Challenges:
 
   * Enable Automatic Function Calling
 
-      in ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
+      In ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
 
   * Test the AI by launching the application and asking the bot `What time is it?` again
 
@@ -61,7 +61,7 @@ Challenges:
       kernel.Plugins.AddFromObject( new GeocodingPlugin(kernel.Services.GetRequiredService<IHttpClientFactory>(), config), "GeocodingPlugin");
       ```
 
-  * Run the application and test the Geocoding plugin by submitting the following prompt
+  * Run the application and test the Geocoding plugin by submitting the following prompt:
 
     ```plaintext
     what are the geo-coordinates for Tampa, FL
