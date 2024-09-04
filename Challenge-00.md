@@ -57,8 +57,6 @@ The rest of the challenges will refer to the relative paths inside the Git Repos
 
 ## Success Criteria
 
-To complete this challenge successfully, you should be able to:
-
 ### If using GitHub CodeSpaces
 
 - Verify you have the following files & folders available in the CodeSpaces:
