@@ -81,7 +81,7 @@
 1. Capture the `Application (client) ID` and `Directory (tenant) ID` from the App Registration Overview section. Then add it to the secrets manager in the Semantic Kernel app or appsettings.json file.
 
     <img src="./Resources/images/appregistration.png" alt="drawing" width="60%"/>
-    
+
 1. Capture the `Scope` from the App Registration found under the `Expose an API` section. Then add it to the secrets manager in the Semantic Kernel app or appsettings.json file.
 
     <img src="./Resources/images/scope.png" alt="drawing" width="60%"/>
@@ -190,4 +190,4 @@
 1. Successfully create a new Logic App in the Azure Portal.
 1. Successfully call the Logic App from a browser or HTTP client like Postman.
 
-### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
+### **[Next](./Challenge-04.md)** [>]()
