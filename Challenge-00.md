@@ -25,44 +25,15 @@ You will need an Azure subscription to complete this hack. If you don't have one
 
 You will need a development environment to complete the challenges. You can use GitHub CodeSpaces or set up a local development environment on your workstation.  We recommend using GitHub CodeSpaces as it is pre-configured with all the necessary tools and resources for this hack.
 
-- [Setup GitHub CodeSpace](#setup-github-codespace)
-  - [Access GitHub CodeSpace](https://codespaces.new/RandyPatterson/AOAI_Student)
-  - [Use GitHub CodeSpaces](#use-github-codespaces)
-
-- [Use Local Workstation](#use-local-workstation)
+- [GitHub CodeSpaces](#github-codespaces)
+- [Local Workstation](#use-local-workstation)
 
 
-### Setup GitHub CodeSpace
+### GitHub CodeSpaces
 
-You can use [GitHub CodeSpaces](https://docs.github.com/en/codespaces/overview) where we have a pre-configured Visual Studio Code lab environment set up and ready to go for you, or you can setup a Development environment on your local workstation.
+GitHub CodeSpaces is a cloud-based development environment that allows you to develop entirely in the cloud. It provides a fully configured environment with all the tools and resources you need to complete the challenges. If you want to learn more about GitHub CodeSpaces, you can visit the [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview). However we provide you with a pre-configured GitHub CodeSpace for this hack.
 
-A GitHub CodeSpace is a development environment that is hosted in the cloud that you access via a browser. All of the pre-requisite developer tools for this hack are pre-installed and available in the CodeSpace.
-
-- [Use GitHub CodeSpaces](#use-github-codespaces)
-
-We highly recommend using GitHub CodeSpaces to make it easier complete this hack.
-
-#### Use GitHub CodeSpaces
-
-You must have a GitHub account to use GitHub CodeSpace. If you do not have a GitHub account, you can [Sign Up Here](https://github.com/signup).
-
-GitHub CodeSpaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core CodeSpace, plus 15 GB of storage each month.
-
-You can see your balance of available CodeSpace hours on the [GitHub billing page](https://github.com/settings/billing/summary).
-
-The GitHub CodeSpace for this hack will host Visual Studio Code with .NET 8 and relevant extensions installed, the starter application, configuration files, and other data files needed for this event. Here are the steps you will need to follow:
-
-- A GitHub repo containing the student resources and CodeSpace for this hack is hosted here:
-  - [WTH OpenAI and Semantic Kernel Fundamentals Repo](https://github.com/RandyPatterson/AOAI_Student)
-  - Please open this link and sign in with your personal GitHub account.
-
-**NOTE:** Make sure you do not sign in with your enterprise managed GitHub account.
-
-- Once you are signed in, click on the green "Code" button. Then click on "CodeSpaces". Finally, hit "Create CodeSpace on main".
-
-Your CodeSpace environment should load in a new browser tab. It will take approximately 3-5 minutes the first time you create the CodeSpace for it to load.
-
-- When the CodeSpace completes loading, you should find an instance of Visual Studio Code running in your browser with the files needed for this hackathon.
+Let's get started with a pre-configured GitHub CodeSpace: [Launch CodeSpaces](https://open.vscode.dev/RandyPatterson/AOAI_Student)
 
 #### Use Local Workstation
 
@@ -98,7 +69,7 @@ To complete this challenge successfully, you should be able to:
 
 ### If using GitHub CodeSpaces
 
-- Verify you have the following files & folders available in the CodeSpace:
+- Verify you have the following files & folders available in the CodeSpaces:
 
   ```text
   /workspaces/AOAI_Student
