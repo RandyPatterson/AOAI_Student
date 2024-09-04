@@ -25,7 +25,7 @@ Participants will learn how to:
 
 ## Challenges
 
-- [Challenge 00:](./Challenge-00.md) Prerequisites 
+- [Challenge 00]:(./Challenge-00.md) Prerequisites 
   - Prepare your workstation to work with Azure.
 - [Challenge 01](./Challenge-01.md): Azure OpenAI Fundamentals
   - Deploy an Azure OpenAI Model
@@ -44,7 +44,7 @@ Participants will learn how to:
 - [Challenge 04](./Challenge-04.md): Import an OpenAPI Spec API as a Semantic Kernel Plugin
   - Create a workflow plugin using Logic Apps
   - Import Logic App into Semantic Kernel
-- [Challenge 05](Student/Challenge-05.md): Retrieval-Augmented Generation (RAG)
+- [Challenge 05](./Challenge-05.md): Retrieval-Augmented Generation (RAG)
   - Document Chunking & Embedding
   - Enhance AI responses by searching external sources
 - [Challenge 06](./Challenge-06.md): Responsible AI
