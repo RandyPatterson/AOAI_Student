@@ -14,18 +14,18 @@ This hack is designed for individuals who want to gain practical experience in w
 
 Participants will learn how to:
 
-- Build a simple chat using Semantic Kernel
+- Build a simple chat using Semantic Kernel and C#
 - Add plugins and enable auto calling to create Planners
 - Create a workflow plugin using Logic Apps
 - Implement Retrieval Augmented Generation (RAG)
   - Document Chunking
   - Grounding AI
 - Working with Image generation
-- Multi-Agent workflowss
+- Multi-Agent workflows
 
 ## Challenges
 
-- **[Challenge 00: Prerequisites - Ready, Set, GO!](./Challenge-00.md)**
+- [Challenge 00:](./Challenge-00.md) Prerequisites 
   - Prepare your workstation to work with Azure.
 - [Challenge 01](./Challenge-01.md): Azure OpenAI Fundamentals
   - Deploy an Azure OpenAI Model
@@ -41,7 +41,7 @@ Participants will learn how to:
   - Creating Semantic Kernel Plugins
   - Enable auto function calling
   - What is a Planner
-- [Challenge 04](./Challenge-04.md): Import OpenAPI API as Semantic Kernel Plugin
+- [Challenge 04](./Challenge-04.md): Import an OpenAPI Spec API as a Semantic Kernel Plugin
   - Create a workflow plugin using Logic Apps
   - Import Logic App into Semantic Kernel
 - [Challenge 05](Student/Challenge-05.md): Retrieval-Augmented Generation (RAG)
@@ -54,29 +54,13 @@ Participants will learn how to:
   - Working with Text to Image Models
   - Creating an Image Generating Plugin
 - [Challenge 08](./Challenge-08.md): Multi-Agents
+  - Create a multi-agent conversation using Semantic Kernel
+  - Implement a multi-agent conversation using Azure OpenAI
   
-## Prerequisites
-
-- Access to an Azure Subscription
-  - If you don't have one, [Sign Up for Azure HERE](https://azure.microsoft.com/en-us/free/) 
-- [Access to Azure OpenAI](https://customervoice.microsoft.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbR7en2Ais5pxKtso_Pz4b1_xUOFA5Qk1UWDRBMjg0WFhPMkIzTzhKQ1dWNyQlQCN0PWcu)
-- [Access to GitHub CodeSpaces](https://github.com/signup)
-  - All GitHub users have free access to [GitHub CodeSpaces](https://docs.github.com/en/codespaces/overview), a cloud-hosted development environment that you access via web browser.
-  - If you don't have a GitHub account, [Sign up for GitHub here](https://github.com/signup).
-  - If you use GitHub CodeSpaces, you do NOT need to install ANY prerequisites on your local workstation!
-
-Students who wish to run this hack from their local workstation will require the following:
-
-- [Visual Studio Code](https://code.visualstudio.com/download)
-  - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
-- Or Visual Studio 2022 +
-- [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
-- [Git CLI](https://git-scm.com/downloads)
-- [Azure CLI (Optional)](https://aka.ms/installazurecli)
-- [Student Resources](./Challenge-00.md#student-resources)
-
 ## Contributors
 
 - [Chris McKee](https://github.com/ChrisMcKee1)
 - [Randy Patterson](https://github.com/RandyPatterson)
 - [Zack Way](https://github.com/seiggy)
+- [Travis Terrell](https://github.com/travisterrell)
+- [Eric Rhoads](https://github.com/ecrhoads)
