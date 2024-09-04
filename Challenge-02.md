@@ -4,25 +4,33 @@
 
 ## Introduction
 
-The first step in understanding Semantic Kernel is to become familiar with the basics. Semantic Kernel is a lightweight, open-source development kit designed to help developers build AI-infused applications using the latest AI models. It supports languages like C#, Python, and Java, making it versatile for various development environments. Semantic Kernel provides a simple and consistent API for developers to interact with several different AI models, including GPT-3.5, GPT-4, Meta-Llama, DALL·E, and many more. You can use Semantic Kernel to build applications that can generate text, images, sound, and even code. Models can be hosted locally or in the cloud, and you can use the same API to interact with them. In this hackathon, you will be using Azure OpenAI models and other Azure services to add intelligence to the provided application.
+The first step in understanding Semantic Kernel is to become familiar with the basics. Semantic Kernel is a lightweight, open-source development kit designed to help developers build AI-infused applications using the latest AI models. It supports languages like C#, Python, and Java, making it versatile for various development environments. Semantic Kernel provides a simple and consistent API for developers to interact with several different AI models, including GPT-3.5, GPT-4, Meta-Llama, DALL·E, and many more. You can use Semantic Kernel to build applications that can generate text, images, sound, and even code. Models can be hosted locally or in the cloud, and you can use the same API to interact with them.
 
 ## Description
 
-In this challenge, you will be provide a starter application that will require you to complete the implementation of the chat API to use Semantic Kernel and Azure OpenAI GPT-4o model. The application is a simple chat window that allows users to interact with the AI model by typing a question or prompt and pressing the **Enter** key. The AI model will then respond with an answer or completion to the prompt. The application uses the Semantic Kernel framework to interact with the AI model. You will need to complete the implementation of the chat API to send the user's prompt to the AI model and return the response to the user.
+In this challenge, you will be provided with a starter application that will require you to complete the implementation of the chat feature using Semantic Kernel and the Azure OpenAI GPT-4o model. The application is a simple chat window that allows users to interact with the AI model by typing a question or prompt and pressing the **Enter** key. The AI model will then respond with an answer or completion to the prompt. The application uses the Semantic Kernel framework to interact with the AI model. You will need to complete the implementation of the chat API to send the user's prompt to the AI model and return the response to the user.
 
 ## Getting Familiar With the Reference Application
 
-1. From the project root directory navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code.
+1. From the project root directory navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code. If you are using Visual Studio open the solution file ```AOAIWorkshop.sln```. If you are using Visual Studio Code, Navigate to the folder ```AOAIWorkshop```.
 
-1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure Open AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Enter** key. Currently, the application will respond with an error message because the AI Model has not been configured. 
+1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure Open AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Enter** key. Currently, the application will respond with an error message because the AI Model has not been configured.
 
     <img src="./Resources/images/ch02i01.png" width="75%">
 
-1. Open the ```Program.cs``` file
+    If you are using Visual Studio Code, you can run the application by executing the following command in the terminal
+
+    ```bash
+    dotnet run
+    ```
+
+    If you run `dotnet run` in the terminal, the url will be displayed in the terminal. Open the url in a browser to view the application.
+
+1. Open the ```.\AOAI_Workshop\Program.cs``` file
 
     At the heart of the Semantic Kernel framework is the **Kernel** object. Here is where you register the AI Models you will be working with and any Plugins you be using in your application. You will learn about Plugins in later challenges. The **Kernel** object is also where you can configure the AI Models you will be using.
 
-    Starting on line 45, the Kernel object is being configured to use an Azure OpenAI chat model by calling the ```AddAzureOpenAIChatCompletion``` method of the Kernel Builder class.  
+    The Kernel object is being configured to use an Azure OpenAI chat model by calling the ```AddAzureOpenAIChatCompletion``` method of the Kernel Builder class.  
 
     ```csharp
     //Configure Semantic Kernel
@@ -37,14 +45,14 @@ In this challenge, you will be provide a starter application that will require y
 
     The **AddAzureOpenAIChatCompletion** method takes three parameters: the deployment model name, the endpoint URL, and the API key. These values are read from the *appsettings.json* file. Next, some additional services are added and logging is configured. Finally, the **Kernel** object is built and the application is started.
 
-    Starting on line 72 begins the API endpoint definitions with the most important being the ```/chat``` endpoint. This is where the Chat History including the users prompt is received by the client application and sent to the AI model for processing. The AI response is then sent back to the user. The Kernel object we just created is passed to the handler so that it can be used to interact with the AI model. In the remaining tasks in this challenge you will complete the implementation of the ```/chat``` endpoint.
+Find the endpoint ```/chat```. This endpoint is where the user's prompt is received and sent to the AI model for processing. The AI response is then sent back to the user. The Kernel object we just created is passed to the handler so that it can be used to interact with the AI model. In the remaining tasks in this challenge you will complete the implementation of the ```/chat``` endpoint.
 
-    ```csharp
-    app.MapPost("/chat", async (
-        HttpContext context,
-        [FromBody] ChatRequest chatRequest,
-        [FromServices] Kernel kernel) => {
-    ```
+```csharp
+app.MapPost("/chat", async (
+    HttpContext context,
+    [FromBody] ChatRequest chatRequest,
+    [FromServices] Kernel kernel) => {
+```
 
 ## Challenges
 
