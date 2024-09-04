@@ -2,9 +2,7 @@
 
 # Challenge 04 Pre-requisites - Setup Azure Logic Apps
 
-## Create Azure Logic App
-
-### Logic App
+## Create Logic App
 
 1. Open the Azure Portal and search for `Logic App` in the search bar.
 1. Click on `Logic Apps` and Add a new Logic App.
@@ -14,14 +12,14 @@
 1. Pick a location and click on `Review + Create` then `Create`.
 1. Once the Logic App is created, click on `Go to resource`.
 
-### Enable Access to Logic App
+## Enable Access to Logic App
 
 1. Modify Logic App Host.json file.
 2. Create App Registration for the Logic App.
 3. Turn on EasyAuth by assigning the App Registration to the Logic App.
 4. Add code to program.cs to login and acquire a token for Logic Apps.
 
-#### Modify Logic App Host.json file
+### Modify Logic App Host.json file
 
 1. In the Logic App under development tools, click on `Advanced Tools` then `Go`.
 
@@ -72,7 +70,7 @@
     }
     ```
 
-#### Create App Registration for the Logic App
+### Create App Registration for the Logic App
 
 1. Navigate to the Azure Portal and search for `App Registrations` in the search bar.
 1. Click on `New registration` and give it a name like `LogicAppAuth`, then click on `Register`.
@@ -86,7 +84,7 @@
     <img src="./Resources/images/scope.png" alt="drawing" width="60%"/>
 
 
-#### Turn on EasyAuth by assigning the App Registration to the Logic App
+### Turn on EasyAuth by assigning the App Registration to the Logic App
 
 1. Navigate back to the Logic App in the Azure Portal.
 1. Under `Settings` click on `Authentication` then click on `Add identity provider`.
@@ -103,7 +101,7 @@
     - `Use default restrictions based on issuer`
 1. Click on `Save`.
 
-#### Add code to Program.cs to login and acquire a token for Logic Apps
+### Add code to Program.cs to login and acquire a token for Logic Apps
 
 1. In the Semantic Kernel app, navigate to the `Program.cs` file.
 1. Register your Tenant ID, Client ID, and Scope in secrets manager.
@@ -132,7 +130,7 @@
     }
     ```
 
-### Logic App Workflow
+## Logic App Workflow
 
 1. Navigate back to the Logic App in the Azure Portal.
 1. Under `Workflow` click on `Workflows` then click on `Add`.
