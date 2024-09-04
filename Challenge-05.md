@@ -159,9 +159,9 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
 ## Success Criteria
 
-* Verify that you deployed the text-embedding-ada-002 Text Embedding model in Azure AI Studio
-* Verify that you deployed an AI Search Index and imported the Contoso Handbook PDF
-* Verify that the Chatbot is able to answer questions about the Contoso Handbook
+1. Verify that you deployed the text-embedding-ada-002 Text Embedding model in Azure AI Studio
+1. Verify that you deployed an AI Search Index and imported the Contoso Handbook PDF
+1. Verify that the Chatbot is able to answer questions about the Contoso Handbook
 
 ## Additional Learning Resources
 
