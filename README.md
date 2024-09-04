@@ -25,7 +25,7 @@ Participants will learn how to:
 
 ## Challenges
 
-- [Challenge 00]:(./Challenge-00.md) Prerequisites 
+- [Challenge 00](./Challenge-00.md): Prerequisites 
   - Prepare your workstation to work with Azure.
 - [Challenge 01](./Challenge-01.md): Azure OpenAI Fundamentals
   - Deploy an Azure OpenAI Model
