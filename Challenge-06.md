@@ -15,20 +15,20 @@ Content filters are essential in ensuring that your AI models meet your organiza
 
 > NOTE: Make sure you have access to the Azure OpenAI Studio and an existing Azure OpenAI resource, as these are required to complete this challenge.
 
-### Challenges
+## Challenges
 
 This challenge will guide you through configuring and testing content filters using Azure OpenAI Studio.
 
-##### Navigate to Azure OpenAI Studio
+### Navigate to Azure OpenAI Studio
 
 - **Azure Portal**
 	- Navigate to your already-created Open AI resource in the Azure Portal
 	- At the bottom of the overview page, click the button for "Go to Azure OpenAI Studio"
-	 <img src="./Resources/images/aoai-studio-button.png" alt="aoai-studio-button" width="60%"/>
+	 <img src="./Resources/images/aoai-studio-button.png" alt="aoai-studio-button" width="30%"/>
 - **Direct link:** https://oai.azure.com/
 
 
-##### Adjust Filter Settings
+### Adjust Filter Settings
 
 1. Navigate to the "**Content Filters**" tab at the lower left.
 1. Click "**Create content filter**", then enter a name for your new filter
@@ -47,9 +47,8 @@ This challenge will guide you through configuring and testing content filters us
 1. **Test the changes** by running prompts through the model and observing the impact of the filters.
 
 
-##### Filter specific words or patterns
-
-- **Blocklists** can be used to create a custom filter to block a specific word or phrase that you believe should be filtered in your application
+### Filter specific words or patterns
+>**Blocklists** can be used to create a custom filter to block a specific word or phrase that you believe should be filtered in your application
 1. Return to the **Content filters** tab, then on the resulting screen, click the Blocklists (Preview) tab
 	<img src="./Resources/images/filter-blocklists.png" alt="aoai-filter-deployment-list" width="60%"/>
 1. Click **Create blocklist**, then enter a name & description *(optional)*
@@ -58,7 +57,7 @@ This challenge will guide you through configuring and testing content filters us
 	- Proceed to add a term you would like to be excluded. You could use a random test word like "unicorn", or something more realistic—like "social security number."
 	- It also supports using regex to generically filter input that matches a predefined pattern.
 
-##### Integrating Filters into Your Workflow
+### Integrating Filters into Your Workflow
 
 - Consider how these filters could be integrated into your broader AI application or workflow.
 - Think about scenarios where custom filters might be essential for maintaining ethical standards. Keep these in mind when developing with AI solutions in the future.
