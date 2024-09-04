@@ -4,11 +4,11 @@
 
 ## Introduction
 
-The first step in understanding Azure OpenAI and Semantic Kernel is to become familiar with the basics. Semantic Kernel is a lightweight, open-source development kit designed to help developers build AI-infused applications using the latest AI models. It supports languages like C#, Python, and Java, making it versatile for various development environments. Semantic Kernel provides a simple and consistent API for developers to interact with several different AI models, including GPT-3.5, GPT-4, Meta-Llama, DALL·E, and many more. You can use Semantic Kernel to build applications that can generate text, images, sound, and even code. Models can be hosted locally or in the cloud, and you can use the same API to interact with them. In this hackathon, you will be using Azure OpenAI models and other Azure services to add intelligence to the provided application.
+The first step in understanding Semantic Kernel is to become familiar with the basics. Semantic Kernel is a lightweight, open-source development kit designed to help developers build AI-infused applications using the latest AI models. It supports languages like C#, Python, and Java, making it versatile for various development environments. Semantic Kernel provides a simple and consistent API for developers to interact with several different AI models, including GPT-3.5, GPT-4, Meta-Llama, DALL·E, and many more. You can use Semantic Kernel to build applications that can generate text, images, sound, and even code. Models can be hosted locally or in the cloud, and you can use the same API to interact with them. In this hackathon, you will be using Azure OpenAI models and other Azure services to add intelligence to the provided application.
 
 ## Description
 
-In this challenge, you will be provide a starter application that will require you to complete the implementation of the chat API. You will configure the reference application to use the Azure OpenAI GPT-4o model.
+In this challenge, you will be provide a starter application that will require you to complete the implementation of the chat API to use Semantic Kernel and Azure OpenAI GPT-4o model. The application is a simple chat window that allows users to interact with the AI model by typing a question or prompt and pressing the **Enter** key. The AI model will then respond with an answer or completion to the prompt. The application uses the Semantic Kernel framework to interact with the AI model. You will need to complete the implementation of the chat API to send the user's prompt to the AI model and return the response to the user.
 
 ## Getting Familiar With the Reference Application
 
