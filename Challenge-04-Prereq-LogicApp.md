@@ -117,12 +117,12 @@
     string Authority = $"https://login.microsoftonline.com/{TenantId}";
     string[] Scopes = { Scope };
 
+    AuthenticationResult authResult = null;
     var publicClient = PublicClientApplicationBuilder.Create(ClientId)
                 .WithAuthority(Authority)
                 .WithDefaultRedirectUri() // Uses http://localhost for a console app
                 .Build();
 
-    AuthenticationResult authResult = null;
     try
     {
         authResult = await publicClient.AcquireTokenInteractive(Scopes).ExecuteAsync();
