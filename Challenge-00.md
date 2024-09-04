@@ -26,6 +26,8 @@ You will need an Azure subscription to complete this hack. If you don't have one
 You will need a development environment to complete the challenges. You can use GitHub CodeSpaces or set up a local development environment on your workstation.  We recommend using GitHub CodeSpaces as it is pre-configured with all the necessary tools and resources for this hack.
 
 - [Setup GitHub CodeSpace](#setup-github-codespace)
+  - [Access GitHub CodeSpace](https://codespaces.new/RandyPatterson/AOAI_Student)
+  - [Use GitHub CodeSpaces](#use-github-codespaces)
 
 - [Use Local Workstation](#use-local-workstation)
 
@@ -42,7 +44,7 @@ We highly recommend using GitHub CodeSpaces to make it easier complete this hack
 
 #### Use GitHub CodeSpaces
 
-You must have a GitHub account to use GitHub v. If you do not have a GitHub account, you can [Sign Up Here](https://github.com/signup).
+You must have a GitHub account to use GitHub CodeSpace. If you do not have a GitHub account, you can [Sign Up Here](https://github.com/signup).
 
 GitHub CodeSpaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core CodeSpace, plus 15 GB of storage each month.
 
