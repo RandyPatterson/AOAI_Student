@@ -1,4 +1,4 @@
-# Challenge 05 -  Create a workflow plugins using a Logic App
+# Challenge 05 -  Create a Retrieval-Augmented Generation (RAG) Plugin
 
 [< Previous Challenge](./Challenge-04.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-06.md)
 
