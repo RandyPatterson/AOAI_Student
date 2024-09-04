@@ -79,8 +79,11 @@
 1. Give it a name like `SKLogicApp`, check `Admins and users`, fill in the remaining fields and click on `Add scope`.
 1. The scope will be used in the Semantic Kernel app to access the Logic App.
 1. Capture the `Application (client) ID` and `Directory (tenant) ID` from the App Registration Overview section. Then add it to the secrets manager in the Semantic Kernel app or appsettings.json file.
+
     <img src="./Resources/images/appregistration.png" alt="drawing" width="60%"/>
+    
 1. Capture the `Scope` from the App Registration found under the `Expose an API` section. Then add it to the secrets manager in the Semantic Kernel app or appsettings.json file.
+
     <img src="./Resources/images/scope.png" alt="drawing" width="60%"/>
 
 

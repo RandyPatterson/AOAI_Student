@@ -1,4 +1,4 @@
-### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()  
+### [< Back to Challenge](./Challenge-04.md) - [Next >](./Challenge-04-Prereq-LogicApp.md)
 
 # Challenge 04 Pre-requisites - Setup of Azure DevOps
 
@@ -49,4 +49,4 @@
 1. Verify that the project has mock work items, repos, pipelines, and boards.
 1. Verify that you created a query for work items.
 
-### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
+### [< Back to Challenge](./Challenge-04.md) - [Next>](./Challenge-04-Prereq-LogicApp.md)

@@ -8,6 +8,8 @@ As developers we already use developer tools like Azure DevOps and GitHub. So wh
 
 ## Pre-requisites
 
+:exclamation: Pre-requisites must be done in sequence as they are dependent on each other.
+
 1. [Setup Azure DevOps](./Challenge-04-Prereq-ADO.md)
 1. [Setup Azure Logic Apps](./Challenge-04-Prereq-LogicApp.md)
 
