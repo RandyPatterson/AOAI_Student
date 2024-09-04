@@ -32,9 +32,9 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
     ```
 
-* Start a new chat and using the same email from the previous challenge, craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]` where category is the PII category found in the email.
+* Click `Clear Chat` and using the same email from the previous challenge, craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]` where category is the PII category found in the email.
 
-* Start a new chat and enter the following prompt into the Azure Open AI Studio and observe the results
+* Click `Clear Chat`and enter the following prompt into the Azure Open AI Studio and observe the results
 
     ```text
     A coin is heads up. Maybelle flips the coin over. Shalonda flips the coin over. Is the coin still heads up? 
@@ -42,7 +42,7 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
     The answer, of course, should be ```Yes, the coin is heads up``` but the AI is likely to answer ```No``` because it does not always follow state changes correctly.  Rewrite the prompt convincing the AI to keep track of state changes to successfully answer the question with a ```Yes```.
 
-    :exclamation:Before updating the prompt, clear the current chat history so the AI doesn't consider it's previous answers when responding to the new prompt.
+:exclamation:Before updating the prompt, clear the current chat history so the AI doesn't consider it's previous answers when responding to the new prompt.
 
 ## Success Criteria
 
