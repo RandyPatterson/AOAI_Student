@@ -33,7 +33,9 @@ Let's get started with a pre-configured GitHub CodeSpaces: [Launch CodeSpaces](h
 
 #### Use Local Workstation
 
-To work on your local workstation, please ensure you have the following tools and resources before hacking:
+Using your local workstation is another option to complete the challenges. You will need to set up the necessary tools and resources on your local workstation to complete the challenges and will need to clone the Student Resources Git Repository to your local workstation.
+
+##### Install the following tools on your local workstation:
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
   - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
@@ -43,9 +45,9 @@ To work on your local workstation, please ensure you have the following tools an
 - [Azure CLI (Optional)](https://aka.ms/installazurecli)
 - [Student Resources](#student-resources)
 
-##### Student Resources
+##### Clone the Student Resources to your local workstation
 
-[Git Repo Student Resources](https://github.com/RandyPatterson/AOAI_Student)
+- [Git Repo Student Resources](https://github.com/RandyPatterson/AOAI_Student)
 
 From a directory where you want to store the resources, clone the repository:
 
