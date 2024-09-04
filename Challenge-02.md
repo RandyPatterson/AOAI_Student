@@ -1,8 +1,6 @@
+[< Previous Challenge](./Challenge-01.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-03.md)
+
 # Challenge-02 - Semantic Kernel Fundamentals
-
----
-
-[< Previous Challenge](./Challenge-01.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-03.md)
 
 ## Introduction
 

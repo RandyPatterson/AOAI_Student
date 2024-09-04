@@ -1,4 +1,4 @@
-[< Previous Challenge](./Challenge-07.md) - **[Home](../README.md)**
+[< Previous Challenge](./Challenge-07.md) - **[Home](./README.md)**
 
 ---
 

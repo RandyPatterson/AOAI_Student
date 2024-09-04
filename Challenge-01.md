@@ -1,4 +1,4 @@
-[< Previous Challenge](./Challenge-00.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-02.md)
+[< Previous Challenge](./Challenge-00.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-02.md)
 # Challenge 01 - Azure OpenAI Fundamentals
 
 ## Introduction

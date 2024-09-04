@@ -1,6 +1,6 @@
-# Challenge 03 - Semantic Kernel Plugins
+[< Previous Challenge](./Challenge-02.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-04.md)
 
-[< Previous Challenge](./Challenge-02.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-04.md)
+# Challenge 03 - Semantic Kernel Plugins
 
 ## Pre-requisites
 

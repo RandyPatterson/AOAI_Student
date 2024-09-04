@@ -1,4 +1,4 @@
-[< Previous Challenge](./Challenge-05.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-05.md)
+[< Previous Challenge](./Challenge-05.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-07.md)
 
 # Challenge 06 - Implementing Content Filters in Azure AI
 
