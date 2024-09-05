@@ -18,7 +18,11 @@ Continuing from the previous challenge, navigate to ```.\Resources\src\AOAI_Work
 
 Challenges:
 
-* **Launch your AI Chat app, and submit the prompt `What time is it?`**
+* Launch your AI Chat app, and submit the prompt 
+
+  ```plaintext
+  What time is it?
+  ```
   
     Since the AI does not have the capability to provide real-time information, you will get a response similar to the following:
 
@@ -42,7 +46,11 @@ Challenges:
 
       In ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
 
-  * Test the AI by launching the application and asking the bot `What time is it?` again
+  * Test the AI by launching the application and asking the bot
+  
+    ```plaintext
+    What time is it?
+    ```
 
     Now, the AI should be able to provide the current time by having Semantic Kernel call the ***GetTime*** function in your plugin. The response should be similar to the following:
 
