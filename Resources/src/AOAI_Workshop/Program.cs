@@ -36,7 +36,7 @@ string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
 
     try
     {
-        authResult = await publicClient.AcquireTokenInteractive(Scopes).ExecuteAsync();
+        authResult = await publicClient.AcquireTokenInteractive(Scopes).WithPrompt(Prompt.SelectAccount).ExecuteAsync();
     }
     catch (MsalException ex)
     {
