@@ -20,16 +20,7 @@ You will need an Azure subscription to complete this hack. If you don't have one
 
 ### Development Environment
 
-You will need a development environment to complete the challenges. You can use GitHub CodeSpaces or set up a local development environment on your workstation.  We recommend using GitHub CodeSpaces as it is pre-configured with all the necessary tools and resources for this hack.
-
-- [GitHub CodeSpaces](#github-codespaces)
-- [Local Workstation](#use-local-workstation)
-
-#### GitHub CodeSpaces
-
-GitHub CodeSpaces is a cloud-based development environment that allows you to develop entirely in the cloud. It provides a fully configured environment with all the tools and resources you need to complete the challenges. If you want to learn more about GitHub CodeSpaces, you can visit the [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview). However we provide you with a pre-configured GitHub CodeSpaces for this hack.
-
-Let's get started with a pre-configured GitHub CodeSpaces: [Launch CodeSpaces](https://codespaces.new/RandyPatterson/AOAI_Student)
+You will need a development environment to complete the challenges. You need to set up a local development environment on your workstation.
 
 #### Use Local Workstation
 
@@ -39,11 +30,16 @@ Using your local workstation is another option to complete the challenges. You w
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
   - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
+  - Recommended: [GitHub Copilot Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
 - Or [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Git CLI](https://git-scm.com/downloads)
 - [Azure CLI (Optional)](https://aka.ms/installazurecli)
 - [Student Resources](#student-resources)
+
+:bulb: **Note:** GitHub Copilot is a great tool to help you write code faster. You can install the [GitHub Copilot Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) in Visual Studio Code. We highly recommend you install this extension to help you complete the challenges.
+
+If you do not have GitHub Copilot, you can still complete the challenges. However you can start a free trial of GitHub Copilot by following the instructions [here](https://github.com/features/copilot?ef_id=_k_fdbe5318644f1533620435c241c3e251_k_&OCID=AIDcmmb150vbv1_SEM__k_fdbe5318644f1533620435c241c3e251_k_&msclkid=fdbe5318644f1533620435c241c3e251).
  
 ##### Clone the Student Resources to your Local Workstation
 
@@ -56,23 +52,6 @@ From a directory where you want to store the resources, clone the [repository](h
 The rest of the challenges will refer to the relative paths inside the Git Repository where you can find the various resources to complete the challenges.
 
 ## Success Criteria
-
-### If using GitHub CodeSpaces
-
-- Verify you have the following files & folders available in the CodeSpaces:
-
-  ```text
-  /workspaces/AOAI_Student
-  ├───.devcontainer
-  └───Resources
-      └───src
-          └───AOAI_Workshop
-              ├───html
-              ├───Plugins
-              └───Properties
-  ```
-
-### If working on a Local Workstation
 
 - Verify that you have **Visual Studio Code** with the ***C# Dev Kit*** Extension installed or **Visual Studio 2022**
 - Verify you have the following files & folders locally:
