@@ -188,6 +188,6 @@
 ## Success Criteria
 
 1. Successfully create a new Logic App in the Azure Portal.
-1. Successfully call the Logic App from a browser or HTTP client like Postman.
+1. Successfully call the Logic App from a HTTP client like Postman.
 
 ### **[Next](./Challenge-04.md)** [>]()
