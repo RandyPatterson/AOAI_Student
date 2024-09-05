@@ -89,7 +89,7 @@ Challenges:
 
   * Add Methods to your plugin to:
     1. Get the forecast weather at lat/long location for up to 16 days in the future
-    1. Get the current weather at lat/long location and number of days in the past
+    1. Get the current weather at lat/long location for a number of days in the past
 
   * Test your Plugins by asking the following question:
   
