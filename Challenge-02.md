@@ -12,7 +12,7 @@ In this challenge, you will be provided with a starter application that will req
 
 ## Getting Familiar With the Reference Application
 
-1. From the project root directory navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code. If you are using Visual Studio open the solution file ```AOAIWorkshop.sln```. If you are using Visual Studio Code, Navigate to the folder ```AOAIWorkshop```.
+1. From the project root directory navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code. If you are using Visual Studio open the solution file ```AOAI_Workshop.sln```. If you are using Visual Studio Code, Navigate to the folder ```AOAI_Workshop```.
 
 1. Build and run the application. The application should start and display a chat window. In a similar manner to using the Azure Open AI Studio in the previous challenge, you can interact with the chat window by typing a question or prompt and pressing the **Send** key. Currently, the application will respond with an error message because the AI Model has not been configured.
 
@@ -21,6 +21,7 @@ In this challenge, you will be provided with a starter application that will req
     If you are using Visual Studio Code, you can run the application by executing the following command in the terminal
 
     ```bash
+    cd AOAI_Workshop
     dotnet run
     ```
 
