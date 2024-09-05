@@ -23,6 +23,13 @@ This challenge will introduce you to how to import OpenAPI API as Semantic Kerne
     - Test the prompt "What are my work items?" see how it responds.
 1. In addition to Challenge 3, you will be adding a new plugin to your Semantic Kernel using the Logic App you created in the pre-req.
     - Import your Logic App from the pre-req into Semantic Kernel.
+
+        :bulb: [Integrate Logic App workflows as plugins with Semantic Kernel: Step-by-step guide](https://techcommunity.microsoft.com/t5/azure-integration-services-blog/integrate-logic-app-workflows-as-plugins-with-semantic-kernel/ba-p/4210854)
+
+        :bulb: [Add Logic Apps as plugins](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-logic-apps-as-plugins)
+
+        :exclamation: authResult is optional in the AddPlugins Method so do not forget to do a null reference check.
+
     - Test the prompt "What are my work items?" see how it responds.
 1. _(Optional)_ Create 2 additional Logic Apps Workflows to chained together to create a more complex conversation with the AI.
 
@@ -30,11 +37,7 @@ This challenge will introduce you to how to import OpenAPI API as Semantic Kerne
 
 1. Your chat bot should be able to answer the question "What are my work items?" with a list of work items from Azure DevOps.
 
-## Learning Resources
-
-[Integrate Logic App workflows as plugins with Semantic Kernel: Step-by-step guide](https://techcommunity.microsoft.com/t5/azure-integration-services-blog/integrate-logic-app-workflows-as-plugins-with-semantic-kernel/ba-p/4210854)
-
-[Add Logic Apps as plugins](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-logic-apps-as-plugins)
+## Additional Learning Resources
 
 [Add plugins from OpenAPI specifications](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-openapi-plugins?pivots=programming-language-csharp)
 
