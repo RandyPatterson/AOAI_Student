@@ -61,15 +61,15 @@ In this challenge, you will be provided with a starter application that will req
 
 1. Update the *appsettings.json* file with the Azure OpenAI *Deployment name*, *Endpoint URL* and the *API Key*. These values can be found in the Azure OpenAI Studio.
 
-:bulb: The endpoint URL should be in the format ```https://<deployment-name>.openai.azure.com```
+    :bulb: The endpoint URL should be in the format ```https://<deployment-name>.openai.azure.com```
 
-**appsettings.json**
+    **appsettings.json**
 
-```json
-"AOI_DEPLOYMODEL": "Replace with your AOI deployment name",
-"AOI_ENDPOINT": "Replace with your AOI endpoint",
-"AOI_API_KEY": "Replace with your AOI API key",
-```
+    ```json
+    "AOI_DEPLOYMODEL": "Replace with your AOI deployment name",
+    "AOI_ENDPOINT": "Replace with your AOI endpoint",
+    "AOI_API_KEY": "Replace with your AOI API key",
+    ```
 
 1. Add the **user's message** to the chat history collection.
 
