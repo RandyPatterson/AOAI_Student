@@ -1,6 +1,6 @@
-### [< Previous Challenge](./Challenge-02.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-04.md)
-
 # Challenge 03 - Semantic Kernel Plugins
+
+[< Previous Challenge](./Challenge-02.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-04.md)
 
 ## Pre-requisites
 
@@ -8,21 +8,17 @@ Completed [Challenge 02](./Challenge-02.md) and have a functional version of the
 
 ## Introduction
 
-Semantic Kernel starts to really show it's value in LLM development when you add plugins. Plugins are a way to give the AI extra capabilities and knowledge that cannot be baked into the model. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
+Semantic Kernel starts to really show it's value in LLM development when you add plugins. Plugins are a way to give the AI extra capabilities and knowledge that cannot be trained into the model. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
 
 ## Description
 
-This challenge will introduce you to building Semantic Kernel Plugins in C#, and how to chain plugins using the Auto Function Calling capabilities of Semantic Kernel.
+This challenge will introduce you to building Semantic Kernels Plugins in C#, and how to chain plugins using the Auto Function Calling capabilities of Semantic Kernel.
 
-Continuing from the previous challenge, navigate to ```.\Resources\src\AOAI_Workshop``` and open the provided application in Visual Studio or Visual Studio Code.
+Continuing from the previous challenge, navigate to ```.\Resources\src\``` and open the provided application in Visual Studio or Visual Studio Code.
 
 Challenges:
 
-* Launch your AI Chat app, and submit the prompt 
-
-  ```plaintext
-  What time is it?
-  ```
+* **Launch your AI Chat app, and submit the prompt `What time is it?`**
   
     Since the AI does not have the capability to provide real-time information, you will get a response similar to the following:
 
@@ -33,7 +29,7 @@ Challenges:
     Let's fix this by creating a plugin that can provide the current time and other related information.
 
 * **Create a new class in *./Plugins* directory for your Time Plugin**. You can reference the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/plugins/adding-native-plugins?pivots=programming-language-csharp#defining-a-plugin-using-a-class) for more information on how to create a plugin using a class.
-  * Write a time plugin with the following functions:
+  * Write a time plugin with the following functions
     1. Return the current Date Time
     1. Return the Year for a date passed in as a parameter
     1. Return the Month for a date passed in as a parameter
@@ -44,13 +40,9 @@ Challenges:
 
   * Enable Automatic Function Calling
 
-      In ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
+      in ```Program.cs``` below the comment ```//Challenge 3: Configure the execution settings for the OpenAI chat completion``` Configure Semantic Kernel to automatically call the functions in your plugin when the AI recognizes the intent. See [Using Automatic Function Calling](https://learn.microsoft.com/en-us/semantic-kernel/concepts/planning?pivots=programming-language-csharp#using-automatic-function-calling)
 
-  * Test the AI by launching the application and asking the bot
-  
-    ```plaintext
-    What time is it?
-    ```
+  * Test the AI by launching the application and asking the bot `What time is it?` again
 
     Now, the AI should be able to provide the current time by having Semantic Kernel call the ***GetTime*** function in your plugin. The response should be similar to the following:
 
@@ -69,7 +61,7 @@ Challenges:
       kernel.Plugins.AddFromObject( new GeocodingPlugin(kernel.Services.GetRequiredService<IHttpClientFactory>(), config), "GeocodingPlugin");
       ```
 
-  * Run the application and test the Geocoding plugin by submitting the following prompt:
+  * Run the application and test the Geocoding plugin by submitting the following prompt
 
     ```plaintext
     what are the geo-coordinates for Tampa, FL
@@ -89,13 +81,7 @@ Challenges:
 
   * Add Methods to your plugin to:
     1. Get the forecast weather at lat/long location for up to 16 days in the future
-        ```C#
-          $"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,rain,showers,snowfall,weather_code,wind_speed_10m,wind_direction_10m,wind_gusts_10m&hourly=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation_probability,precipitation,rain,showers,snowfall,weather_code,cloud_cover,wind_speed_10m,uv_index&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&forecast_days={days}");
-        ```
-    2. Get the current weather at lat/long location for a number of days in the past
-        ```C#
-          $"https://api.open-meteo.com/v1/forecast?latitude={latitude}&longitude={longitude}&daily=weather_code,temperature_2m_max,temperature_2m_min,apparent_temperature_max,apparent_temperature_min,sunrise,sunset,daylight_duration,uv_index_max,precipitation_sum,rain_sum,showers_sum,snowfall_sum,precipitation_hours,wind_speed_10m_max,wind_gusts_10m_max&temperature_unit=fahrenheit&wind_speed_unit=mph&precipitation_unit=inch&past_days={daysInPast}");
-        ```
+    1. Get the current weather at lat/long location and number of days in the past
 
   * Test your Plugins by asking the following question:
   
@@ -138,16 +124,19 @@ Challenges:
 
 ## Success Criteria
 
-1. To complete this challenge successfully, the AI should be able to answer the following questions correctly:
-   * What time is it?
-   * What was the date 4 days ago?
-   * What is the day of the week for the last day of next month?
-   * What day of the week does today's date next year fall on?
-2. In addition, you should have a second plugin that can can answer questions around the weather. You should now be able to get the Chatbot to answer the following questions:
-    * What is today's weather in San Francisco?
-    * Is it going to rain next week?
-    * What's the high temp going to be today?
-    * Do I need a raincoat for my movie date Friday?
+To complete this challenge successfully, the AI should be able to answer the following questions correctly:
+
+* What time is it?
+* What was the date 4 days ago?
+* What is the day of the week for the last day of next month?
+* What day of the week does today's date next year fall on?
+
+In addition, you should have a second plugin that can can answer questions around the weather. You should now be able to get the Chatbot to answer the following questions:
+
+* What is today's weather in San Francisco?
+* Is it going to rain next week?
+* What's the high temp going to be today?
+* Do I need a raincoat for my movie date Friday?
 
 ## Learning Resources
 
@@ -190,5 +179,3 @@ Too comfortable?  Eager to do more?  Try these additional challenges!
   * [Open API List](https://apilist.fun/)
 
 * Look for APIs that are either current event related - such as  events and calendars - or something with esoteric knowledge that the AI does poorly with, such as the UPC database, or something like the [PokeAPI - Pokemon Pokedex API](https://pokeapi.co/docs/v2).
-
-### [< Previous Challenge](./Challenge-02.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-04.md)

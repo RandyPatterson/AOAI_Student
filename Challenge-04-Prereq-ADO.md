@@ -1,8 +1,10 @@
-### [< Back to Challenge](./Challenge-04.md) - [Next >](./Challenge-04-Prereq-LogicApp.md)
+[< Back to Challenge](./Challenge-04.md) - **[Home ](../README.md)** [>]()  
 
 # Challenge 04 Pre-requisites - Setup of Azure DevOps
 
-## Azure Portal - Create Azure DevOps Organization
+## Create Azure DevOps Organization and Project
+
+### Azure Portal
 
 1. Open the Azure Portal and search for `Azure DevOps` in the search bar.
 1. Click on `Azure DevOps organizations` and then click on `Create organization`.
@@ -20,7 +22,7 @@
 
     <img src="./Resources/images/classicpipelines.png" alt="drawing" width="60%"/>
 
-## Azure DevOps Demo Generator
+### Azure DevOps Demo Generator
 
 1. Navigate to [Azure DevOps Demo Generator](https://azuredevopsdemogenerator.azurewebsites.net/) and click on `Sign in`.
 1. Choose `Tailwind Traders`.
@@ -49,4 +51,4 @@
 1. Verify that the project has mock work items, repos, pipelines, and boards.
 1. Verify that you created a query for work items.
 
-### [< Back to Challenge](./Challenge-04.md) - [Next>](./Challenge-04-Prereq-LogicApp.md)
+Back to [Challenge 04](./Challenge-04.md) - **[Home](../README.md)**

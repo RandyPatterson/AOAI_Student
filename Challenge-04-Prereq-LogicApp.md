@@ -1,8 +1,10 @@
-### [< Back to Challenge](./Challenge-04.md) - **[Home ](./README.md)** [>]()
+[< Back to Challenge](./Challenge-04.md) - **[Home ](../README.md)** [>]()  
 
 # Challenge 04 Pre-requisites - Setup Azure Logic Apps
 
-## Create Logic App
+## Create Azure Logic App
+
+### Logic App
 
 1. Open the Azure Portal and search for `Logic App` in the search bar.
 1. Click on `Logic Apps` and Add a new Logic App.
@@ -12,14 +14,14 @@
 1. Pick a location and click on `Review + Create` then `Create`.
 1. Once the Logic App is created, click on `Go to resource`.
 
-## Enable Access to Logic App
+### Enable Access to Logic App
 
 1. Modify Logic App Host.json file.
 2. Create App Registration for the Logic App.
 3. Turn on EasyAuth by assigning the App Registration to the Logic App.
 4. Add code to program.cs to login and acquire a token for Logic Apps.
 
-### Modify Logic App Host.json file
+#### Modify Logic App Host.json file
 
 1. In the Logic App under development tools, click on `Advanced Tools` then `Go`.
 
@@ -70,7 +72,7 @@
     }
     ```
 
-### Create App Registration for the Logic App
+#### Create App Registration for the Logic App
 
 1. Navigate to the Azure Portal and search for `App Registrations` in the search bar.
 1. Click on `New registration` and give it a name like `LogicAppAuth`, then click on `Register`.
@@ -79,15 +81,12 @@
 1. Give it a name like `SKLogicApp`, check `Admins and users`, fill in the remaining fields and click on `Add scope`.
 1. The scope will be used in the Semantic Kernel app to access the Logic App.
 1. Capture the `Application (client) ID` and `Directory (tenant) ID` from the App Registration Overview section. Then add it to the secrets manager in the Semantic Kernel app or appsettings.json file.
-
     <img src="./Resources/images/appregistration.png" alt="drawing" width="60%"/>
-
 1. Capture the `Scope` from the App Registration found under the `Expose an API` section. Then add it to the secrets manager in the Semantic Kernel app or appsettings.json file.
-
     <img src="./Resources/images/scope.png" alt="drawing" width="60%"/>
 
 
-### Turn on EasyAuth by assigning the App Registration to the Logic App
+#### Turn on EasyAuth by assigning the App Registration to the Logic App
 
 1. Navigate back to the Logic App in the Azure Portal.
 1. Under `Settings` click on `Authentication` then click on `Add identity provider`.
@@ -104,34 +103,36 @@
     - `Use default restrictions based on issuer`
 1. Click on `Save`.
 
-### Add code to Program.cs to login and acquire a token for Logic Apps
+#### Add code to Program.cs to login and acquire a token for Logic Apps
 
 1. In the Semantic Kernel app, navigate to the `Program.cs` file.
 1. Register your Tenant ID, Client ID, and Scope in secrets manager.
 1. You will find this code commented out in the Program.cs file. Uncomment it and ensure you have the correct values in the secrets manager or appsettings.json file.
 
     ```csharp
-    // Challenge 4: Logic App
     string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
     string TenantId = config["TENANT_ID"]!;
     string Scope = config["LOGIC_APP_SCOPE"]!;
     string Authority = $"https://login.microsoftonline.com/{TenantId}";
     string[] Scopes = { Scope };
 
-    AuthenticationResult authResult = null;
     var publicClient = PublicClientApplicationBuilder.Create(ClientId)
                 .WithAuthority(Authority)
                 .WithDefaultRedirectUri() // Uses http://localhost for a console app
                 .Build();
-    try {
-        authResult = await publicClient.AcquireTokenInteractive(Scopes).WithPrompt(Prompt.SelectAccount).ExecuteAsync();
+
+    AuthenticationResult authResult = null;
+    try
+    {
+        authResult = await publicClient.AcquireTokenInteractive(Scopes).ExecuteAsync();
     }
-    catch (MsalException ex) {
+    catch (MsalException ex)
+    {
         Console.WriteLine("An error occurred acquiring the token: " + ex.Message);
     }
     ```
 
-## Logic App Workflow
+### Logic App Workflow
 
 1. Navigate back to the Logic App in the Azure Portal.
 1. Under `Workflow` click on `Workflows` then click on `Add`.
@@ -186,6 +187,6 @@
 ## Success Criteria
 
 1. Successfully create a new Logic App in the Azure Portal.
-1. Successfully call the Logic App from a HTTP client like Postman.
+1. Successfully call the Logic App from a browser or HTTP client like Postman.
 
-### **[Next](./Challenge-04.md)** [>]()
+Back to [Challenge 04](./Challenge-04.md) - **[Home](../README.md)**

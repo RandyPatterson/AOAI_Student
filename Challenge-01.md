@@ -1,19 +1,24 @@
-### [< Previous Challenge](./Challenge-00.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-02.md)
-
+[< Previous Challenge](./Challenge-00.md) - **[Home](../README.md)** - [Next Challenge >](./Challenge-02.md)
 # Challenge 01 - Azure OpenAI Fundamentals
 
 ## Introduction
 
-The first step in understanding Azure OpenAI is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure OpenAI and how it can be used to build powerful AI infused applications. You will deploy a GPT-3.5 model and use the Azure Open AI Studio to interact with the model.
+The first step in understanding Azure OpenAI and Semantic Kernel is to get familiar with the basics. In this challenge, you will learn about the core concepts of Azure OpenAI and how it can be used to build powerful AI infused applications. You will also explore chat services offered by Azure OpenAI and how prompt engineering can be leveraged to solve real-world problems.
 
-## Setup Azure OpenAI
+## Description
 
-1. Navigate to  [Azure Open AI Studio](https://oai.azure.com) and login with your Azure credentials
-2. Deploy a ***Standard GPT3.5 Turbo*** model (version **0613** or greater) in a region that can host GTP-3.5, GPT-4o and DALL-E models
+Use your local workstation and login to your Azure Account
 
-## Challenges
+### Setup Azure OpenAI
 
-* Using the Azure Open AI Studio, craft a chat prompt to return a United States Postal Service formatted address from the following email
+1. Navigate to  [Azure AI Studio](https://oai.azure.com) `https://oai.azure.com` and login with your Azure credentials
+2. Deploy a ***Standard GPT3.5*** model (version **0613** or greater) in a region that can host GTP-3.5, GPT-4o and DALL-E models
+
+### Challenges
+
+![](./Resources/images/ch0203.png)
+
+* Using the Azure AI Studio Chat Playground, write a prompt to return a United States Postal Service formatted address from the following email
 
     ```plaintext
         Subject: Elevate Your Brand with Our Comprehensive Marketing Solutions! 
@@ -32,11 +37,9 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
     ```
 
-* Click `Clear Chat` and using the same email from the previous challenge, craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]` where category is the PII category found in the email.
+* Click **Clear Chat**. Using the same email from the previous challenge, craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]` where category is the PII category found in the email.
 
-* Click `Clear Chat`and enter the following prompt into the Azure Open AI Studio and observe the results
-
-    :exclamation:Before updating the prompt, clear the current chat history so the AI doesn't consider it's previous answers when responding to the new prompt.
+* Click **Clear Chat**. Enter the following prompt into the Azure AI Studio and observe the results
 
     ```text
     A coin is heads up. Maybelle flips the coin over. Shalonda flips the coin over. Is the coin still heads up? 
@@ -44,17 +47,19 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 
     The answer, of course, should be ```Yes, the coin is heads up``` but the AI is likely to answer ```No``` because it does not always follow state changes correctly.  Rewrite the prompt convincing the AI to keep track of state changes to successfully answer the question with a ```Yes```.
 
+    :exclamation:Before updating the prompt, click **Clear Chat** so the AI doesn't consider it's previous answers when responding to the new prompt.
+
 ## Success Criteria
 
-1. Verify that you deployed a Standard GPT-3.5 model using Azure Open AI Studio
-1. Verify that you can access the Azure Open AI Studio and create a new chat
+1. Verify that you deployed a Standard GRP 3.5 model using Azure AI Studio
+1. Verify that you can access the Azure AI Studio and create a new chat
 1. Verify that you can craft a prompt to return a United States Postal Service formatted address from the provided email
 1. Verify that you can craft a prompt to rewrite the email and replace any PII with the string `[REDACTED: category]`
-1. Verify that you can craft a prompt to compel the AI to keep track of state changes
+1. Verify that you can craft a prompt to compel the AI to keep track of state changes.
 
 ## Learning Resources
 
-[Quickstart: Get started using GPT-35-Turbo with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=command-line%2Cpython-new&pivots=programming-language-studio)
+[QuickStart: Get started using GPT-35-Turbo with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?tabs=command-line%2Cpython-new&pivots=programming-language-studio)
 
 [Azure OpenAI Models](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/models)
 
@@ -63,5 +68,3 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 [Prompt engineering techniques](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#prime-the-output)
 
 [Chain of Thought Prompting](https://learn.microsoft.com/en-us/azure/ai-services/openai/concepts/advanced-prompt-engineering?pivots=programming-language-chat-completions#chain-of-thought-prompting)
-
-### [< Previous Challenge](./Challenge-00.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-02.md)
