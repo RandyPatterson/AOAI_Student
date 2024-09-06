@@ -1,6 +1,6 @@
-# Challenge 00 - Prerequisites - Ready, Set, GO!
+### **[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
 
-**[Home](../README.md)** - [Next Challenge >](./Challenge-01.md)
+# Challenge 00 - Prerequisites - Ready, Set, GO!
 
 ## Introduction
 
@@ -8,104 +8,50 @@ Thank you for participating in the OpenAI & Semantic Kernel Fundamentals What Th
 
 ## Description
 
-In this challenge, you will set up the necessary prerequisites and environment to complete the rest of the hack, including:
-
-- [Access Azure OpenAI](#access-azure-openai)
-- [GitHub CodeSpaces](#setup-github-codespace) or [Local Workstation](#use-local-workstation)
+In this challenge, you will set up the necessary prerequisites and environment to complete the rest of the hack.
 
 ### Access Azure OpenAI
 
-You will need an Azure subscription to complete this hack. If you don't have one, get a free trial here...
+You will need an Azure subscription to complete this hack. If you don't have one, choose one of the following options:
 
 - [Azure Subscription](https://azure.microsoft.com/en-us/free/)
 
-- [Azure Passes](#setup-azure-pass): If your hack-a-thon group has access to an Azure Pass, you can utilize it to gain access to Azure OpenAI and other necessary Azure resources for this Hack-a-thon.
+- Azure Passes: If your hack-a-thon group has access to an Azure Pass, you can utilize it to gain access to Azure OpenAI and other necessary Azure resources for this Hack-a-thon. Please see your instructor or event organizer for details on how to redeem your Azure Pass.
 
-### Setup Azure Pass
+### Development Environment
 
-TBD
-
-### Setup GitHub CodeSpace
-
-You can use [GitHub CodeSpaces](https://docs.github.com/en/codespaces/overview) where we have a pre-configured Visual Studio Code lab environment set up and ready to go for you, or you can setup a Development environment on your local workstation.
-
-A GitHub CodeSpace is a development environment that is hosted in the cloud that you access via a browser. All of the pre-requisite developer tools for this hack are pre-installed and available in the CodeSpace.
-
-- [Use GitHub CodeSpaces](#use-github-codespaces)
-- [Use Local Workstation](#use-local-workstation)
-
-We highly recommend using GitHub CodeSpaces to make it easier complete this hack.
-
-#### Use GitHub CodeSpaces
-
-You must have a GitHub account to use GitHub v. If you do not have a GitHub account, you can [Sign Up Here](https://github.com/signup).
-
-GitHub CodeSpaces is available for developers in every organization. All personal GitHub.com accounts include a monthly quota of free usage each month. GitHub will provide users in the Free plan 120 core hours, or 60 hours of run time on a 2 core CodeSpace, plus 15 GB of storage each month.
-
-You can see your balance of available CodeSpace hours on the [GitHub billing page](https://github.com/settings/billing/summary).
-
-The GitHub CodeSpace for this hack will host Visual Studio Code with .NET 8 and relevant extensions installed, the starter application, configuration files, and other data files needed for this event. Here are the steps you will need to follow:
-
-- A GitHub repo containing the student resources and CodeSpace for this hack is hosted here:
-  - [WTH OpenAI and Semantic Kernel Fundamentals Repo](https://github.com/RandyPatterson/AOAI_Student)
-  - Please open this link and sign in with your personal GitHub account.
-
-**NOTE:** Make sure you do not sign in with your enterprise managed GitHub account.
-
-- Once you are signed in, click on the green "Code" button. Then click on "CodeSpaces". Finally, hit "Create CodeSpace on main".
-
-Your CodeSpace environment should load in a new browser tab. It will take approximately 3-5 minutes the first time you create the CodeSpace for it to load.
-
-- When the CodeSpace completes loading, you should find an instance of Visual Studio Code running in your browser with the files needed for this hackathon.
+You will need a development environment to complete the challenges. You need to set up a local development environment on your workstation.
 
 #### Use Local Workstation
 
-**NOTE:** You can skip this section if are using GitHub CodeSpaces!
+Using your local workstation is another option to complete the challenges. You will need to set up the necessary tools and resources on your local workstation to complete the challenges and will need to clone the Student Resources Git Repository to your local workstation.
 
-##### Local Workstation Requirements
-
-To work on your local workstation, please ensure you have the following tools and resources before hacking:
+##### Install the following tools on your Local Workstation:
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
   - [C# Dev Kit Extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csdevkit)
-- Or Visual Studio 2022 +
+  - Recommended: [GitHub Copilot Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot)
+- Or [Visual Studio 2022](https://visualstudio.microsoft.com/downloads/)
 - [.NET 8 SDK](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Git CLI](https://git-scm.com/downloads)
 - [Azure CLI (Optional)](https://aka.ms/installazurecli)
 - [Student Resources](#student-resources)
 
-### Student Resources
+:bulb: **Note:** GitHub Copilot is a great tool to help you write code faster. You can install the [GitHub Copilot Extension](https://marketplace.visualstudio.com/items?itemName=GitHub.copilot) in Visual Studio Code. We highly recommend you install this extension to help you complete the challenges.
 
-[Git Repo Student Resources](https://github.com/RandyPatterson/AOAI_Student)
+If you do not have GitHub Copilot, you can still complete the challenges. However you can start a free trial of GitHub Copilot by following the instructions [here](https://github.com/features/copilot?ef_id=_k_fdbe5318644f1533620435c241c3e251_k_&OCID=AIDcmmb150vbv1_SEM__k_fdbe5318644f1533620435c241c3e251_k_&msclkid=fdbe5318644f1533620435c241c3e251).
+ 
+##### Clone the Student Resources to your Local Workstation
 
-From a directory where you want to store the resources, clone the repository:
+From a directory where you want to store the resources, clone the [repository](https://github.com/RandyPatterson/AOAI_Student). You can do this by running the following command in your terminal or command prompt:
 
-```powershell
-git clone https://github.com/RandyPatterson/AOAI_Student.git
-```
+  ```powershell
+  git clone https://github.com/RandyPatterson/AOAI_Student.git
+  ```
 
 The rest of the challenges will refer to the relative paths inside the Git Repository where you can find the various resources to complete the challenges.
 
 ## Success Criteria
-
-To complete this challenge successfully, you should be able to:
-
-### If using GitHub CodeSpaces
-
-- Verify you have the following files & folders available in the CodeSpace:
-
-  ```text
-  /workspaces/AOAI_Student
-  ├───.devcontainer
-  └───Resources
-      └───src
-          └───AOAI_Workshop
-              ├───html
-              ├───Plugins
-              └───Properties
-  ```
-
-### If working on a local workstation
 
 - Verify that you have **Visual Studio Code** with the ***C# Dev Kit*** Extension installed or **Visual Studio 2022**
 - Verify you have the following files & folders locally:
@@ -121,6 +67,4 @@ To complete this challenge successfully, you should be able to:
               └───Properties
   ```
 
-## Learning Resources
-
-- [GitHub CodeSpaces Overview](https://docs.github.com/en/codespaces/overview)
+### **[Home](./README.md)** - [Next Challenge >](./Challenge-01.md)
