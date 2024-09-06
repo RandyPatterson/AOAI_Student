@@ -64,3 +64,6 @@ Participants will learn how to:
 - [Zack Way](https://github.com/seiggy)
 - [Travis Terrell](https://github.com/travisterrell)
 - [Eric Rhoads](https://github.com/ecrhoads)
+
+
+Chris
