@@ -8,7 +8,7 @@ Completed [Challenge 02](./Challenge-02.md) and have a functional version of the
 
 ## Introduction
 
-Semantic Kernel starts to really show it's value in LLM development when you add plugins. Plugins are a way to give the AI extra capabilities and knowledge that cannot be baked into the model. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
+Semantic Kernel truly shines in LLM development when you incorporate plugins. These plugins extend the AI's capabilities and provide access to additional knowledge that cannot be built directly into the model through training. Things such as time sensitive data, user specific information, and esoteric knowledge are all areas where the Plugin model can greatly improve the capabilities of your AI. In this challenge, you will implement a time plugin, and a plugin that retrieves the weather for a location to extend the capabilities of your chat bot.
 
 ## Description
 
