@@ -16,7 +16,7 @@ In this challenge, you will create a multi-agent system that takes the user's re
 
 1. First, we're going to open the AOAI_Workshop.Console app. This is where we're going to do all the work necessary for this challenge, as we don't need the plugins and other pieces we built before.
 
-2. Open the User Secrets for the AOAI_Workshop.Console app. Copy settings from the AOAI_Workshop ```appsettings.json``` file to the **AOAI_Workshop.Console** ```appsettings.json``` file. Ensure that the following details are set. We recommend using the gpt-4o model for this excercise, though it will work with other models:
+1. Open the User Secrets for the AOAI_Workshop.Console app. Copy settings from the AOAI_Workshop ```appsettings.json``` file to the **AOAI_Workshop.Console** ```appsettings.json``` file. Ensure that the following details are set. We recommend using the gpt-4o model for this excercise, though it will work with other models:
 
 ```json
 {
@@ -53,19 +53,19 @@ or the user for approval. If there are missing features, you will need to send a
 to the Software Engineer or Business Analyst with details of the defect.
 ```
 
-4. Create string objects and add these personas. Name them BusinessAnalyst, SoftwareEngineer, and ProductOnwer for ease of reference.
+1. Create string objects and add these personas. Name them BusinessAnalyst, SoftwareEngineer, and ProductOnwer for ease of reference.
 
-5. Next we need to create an Agent for each persona. These Agents should be `ChatCompletionAgent` objects. They will all share the same Kernel Configuration.
+1. Next we need to create an Agent for each persona. These Agents should be `ChatCompletionAgent` objects. They will all share the same Kernel Configuration.
 
-6. Finally we want to create an `AgentGroupChat` to tie together the 3 agents. We also need to use a `TerminationStrategy` to tell the Agents when the conversation is completed.
+1. Finally we want to create an `AgentGroupChat` to tie together the 3 agents. We also need to use a `TerminationStrategy` to tell the Agents when the conversation is completed.
 
-7. At the bottom of `Program.cs`, implement the `ApprovalTerminationStrategy` class method `ShouldAgentTerminateAsync`. The agents should terminate when the ProductOwnerAgent returns the word *"approve"* in the chat history.
+1. At the bottom of `Program.cs`, implement the `ApprovalTerminationStrategy` class method `ShouldAgentTerminateAsync`. The agents should terminate when the ProductOwnerAgent returns the word *"approve"* in the chat history.
 
-8. Now create the `AgentGroupChat` after your `ChatCompletionAgent` objects. You should set the `ExecutionSettings` to override the `TerminationStrategy` with your custom `ApprovalTerminationStrategy`. Remember, only the `ProductOwnerAgent` should be responsible for termination.
+1. Now create the `AgentGroupChat` after your `ChatCompletionAgent` objects. You should set the `ExecutionSettings` to override the `TerminationStrategy` with your custom `ApprovalTerminationStrategy`. Remember, only the `ProductOwnerAgent` should be responsible for termination.
 
-9. Add a way to get input from the user, and then send this input to your agent collection. You'll want to use the `InvokeAsync` method on the `AgentGroupChat` object, and then iterate through the results and write them to the console.
+1. Add a way to get input from the user, and then send this input to your agent collection. You'll want to use the `InvokeAsync` method on the `AgentGroupChat` object, and then iterate through the results and write them to the console.
 
-10. Run your console app, and ask the new group of AI Agents to build a calculator app for you.
+1. Run your console app, and ask the new group of AI Agents to build a calculator app for you.
 
 ### Success Criteria
 

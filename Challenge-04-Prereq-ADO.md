@@ -7,7 +7,7 @@
 1. Open the Azure Portal and search for `Azure DevOps` in the search bar.
 1. Click on `Azure DevOps organizations` and then click on `Create organization`.
 1. Click on `My Azure DevOps Organizations` then click on `Create new organization`.
-1. Fill in the required fields and click on `Continue`.\
+1. Fill in the required fields and click on `Continue`.
 1. Click on `Organization settings`.
 
     <img src="./Resources/images/org.png" alt="drawing" width="60%"/>
@@ -32,6 +32,8 @@
 1. Once this is done, click on `Navigate to project`.
 
 ### Create Query for Work Items
+
+:bulb: **Note:** This is only required if you do not have a query already created. We have seen the demo generator not create a query for work items in the past. So please follow these step if you need to create a query for work items.
 
 1. Click on `Boards` then `Queries`.
 1. Click on `New Query`.
