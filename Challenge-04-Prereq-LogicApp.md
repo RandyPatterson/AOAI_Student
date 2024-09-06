@@ -111,6 +111,7 @@
 1. You will find this code commented out in the Program.cs file. Uncomment it and ensure you have the correct values in the secrets manager or appsettings.json file.
 
     ```csharp
+    // Challenge 4: Logic App
     string ClientId = config["LOGIC_APP_CLIENT_ID"]!;
     string TenantId = config["TENANT_ID"]!;
     string Scope = config["LOGIC_APP_SCOPE"]!;
@@ -122,13 +123,10 @@
                 .WithAuthority(Authority)
                 .WithDefaultRedirectUri() // Uses http://localhost for a console app
                 .Build();
-
-    try
-    {
-        authResult = await publicClient.AcquireTokenInteractive(Scopes).ExecuteAsync();
+    try {
+        authResult = await publicClient.AcquireTokenInteractive(Scopes).WithPrompt(Prompt.SelectAccount).ExecuteAsync();
     }
-    catch (MsalException ex)
-    {
+    catch (MsalException ex) {
         Console.WriteLine("An error occurred acquiring the token: " + ex.Message);
     }
     ```
