@@ -1,6 +1,6 @@
 ### [< Previous Challenge](./Challenge-03.md) - **[Home](./README.md)** - [Next Challenge >](./Challenge-05.md)
 
-# Challenge 04 -  Create a workflow plugins using a Logic App
+# Challenge 04 -  Create a workflow plugin using Logic Apps
 
 ## Introduction
 

@@ -41,19 +41,21 @@ Participants will learn how to:
   - Creating Semantic Kernel Plugins
   - Enable auto function calling
   - What is a Planner
-- [Challenge 04](./Challenge-04.md): Import an OpenAPI Spec API as a Semantic Kernel Plugin
-  - Create a workflow plugin using Logic Apps
+- [Challenge 04](./Student/Challenge-04.md): Create a workflow plugin using Logic Apps
+  - Setup Azure DevOps
+  - Create a Logic App
   - Import Logic App into Semantic Kernel
 - [Challenge 05](./Challenge-05.md): Retrieval-Augmented Generation (RAG)
   - Document Chunking & Embedding
   - Enhance AI responses by searching external sources
-- [Challenge 06](./Challenge-06.md): Responsible AI
-  - What are services and tools to identify and evaluate harms and data leakage in LLMs?
-  - What are ways to evaluate truthfulness and reduce hallucinations? What are methods to evaluate a model if you don't have a ground truth dataset for comparison?
+- [Challenge 06](./Student/Challenge-06.md): Responsible AI: Exploring Content Filters in Azure OpenAI
+  - Configuring content filters in Azure OpenAI Studio.
+  - Testing content filters.
+  - Creating custom filters to block specific words or phrases.
 - [Challenge 07](./Challenge-07.md): Image Generation using DALL-E
   - Working with Text to Image Models
   - Creating an Image Generating Plugin
-- [Challenge 08](./Challenge-08.md): Multi-Agents
+- [Challenge 08](./Challenge-08.md): Multi-Agent Systems
   - Create a multi-agent conversation using Semantic Kernel
   - Implement a multi-agent conversation using Azure OpenAI
   

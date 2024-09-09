@@ -115,6 +115,7 @@ In this challenge, you will be provided with a starter application that will req
 
 1. Test the application with different prompts to ensure that it can respond to a variety of questions.
 
+
 ## Success Criteria
 
 1. Verify that you deployed a Standard GPT-4o
