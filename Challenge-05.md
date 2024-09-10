@@ -110,9 +110,9 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
     In the reference application open **Program.cs**. Before the code that builds the kernel, use the **KernelBuilder** object to add the previously deployed Azure OpenAI Text Embedding model to Semantic Kernel.  
 2. Configure AI Search
 
-    *Azure AI Search Vector Store connector* is used to search documents using [embeddings](#embeddings-in-ai) . The connector is configured with the URL and API key of the Azure AI Search service. Refere to the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-ai-search-connector?pivots=programming-language-csharp) for more information on how to configure the connector.  
+    *Azure AI Search Vector Store connector* is used to search documents using [embeddings](#embeddings-in-ai) . The connector is configured with the URL and API key of the Azure AI Search service. Refer to the [documentation](https://learn.microsoft.com/en-us/semantic-kernel/concepts/vector-store-connectors/out-of-the-box-connectors/azure-ai-search-connector?pivots=programming-language-csharp) for more information on how to configure the connector.  
 
-    :bulb: There are several ways to add the AI Search Connector to Semantic Kernel, you want to follow the instructions using the **kernelBuilder** and the **SearchIndexClient** class.  You will need to use the **SearchIndexClient** class in your Semantic Search Plugin
+    :bulb: There are several ways to add the AI Search Connector to Semantic Kernel. Follow the instructions using the **kernelBuilder** and the **SearchIndexClient** class.  You will need to use the **SearchIndexClient** class in your Semantic Search Plugin.
 
 1. Create a Semantic Search Plugin to query the AI Search Index created earlier. This Plugin should take the users query and generate an embedding using the Text Embedding model. The embedding should then be used to query the AI Search Index containing the Contoso Handbook PDF and return the most relevant information.
 
@@ -159,7 +159,7 @@ In this challenge, you will create a Semantic Search Plugin that utilizes an Azu
 
 ## Success Criteria
 
-1. Verify that you deployed the text-embedding-ada-002 Text Embedding model in Azure AI Studio
+1. Verify that you deployed the text-embedding-ada-002 Text Embedding model in Azure OpenAI Studio
 1. Verify that you deployed an AI Search Index and imported the Contoso Handbook PDF
 1. Verify that the Chatbot is able to answer questions about the Contoso Handbook
 
