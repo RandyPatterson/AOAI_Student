@@ -41,14 +41,14 @@ Participants will learn how to:
   - Creating Semantic Kernel Plugins
   - Enable auto function calling
   - What is a Planner
-- [Challenge 04](./Student/Challenge-04.md): Create a workflow plugin using Logic Apps
+- [Challenge 04](./Challenge-04.md): Create a workflow plugin using Logic Apps
   - Setup Azure DevOps
   - Create a Logic App
   - Import Logic App into Semantic Kernel
 - [Challenge 05](./Challenge-05.md): Retrieval-Augmented Generation (RAG)
   - Document Chunking & Embedding
   - Enhance AI responses by searching external sources
-- [Challenge 06](./Student/Challenge-06.md): Responsible AI: Exploring Content Filters in Azure OpenAI
+- [Challenge 06](./Challenge-06.md): Responsible AI: Exploring Content Filters in Azure OpenAI
   - Configuring content filters in Azure OpenAI Studio.
   - Testing content filters.
   - Creating custom filters to block specific words or phrases.
