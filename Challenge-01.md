@@ -9,7 +9,7 @@ The first step in understanding Azure OpenAI is to get familiar with the basics.
 ## Setup Azure OpenAI
 
 1. Navigate to  [Azure Open AI Studio](https://oai.azure.com) and login with your Azure credentials
-2. Deploy a ***Standard GPT3.5 Turbo*** model (version **0613** or greater) in a region that can host GTP-3.5, GPT-4o and DALL-E models
+2. Deploy a ***Standard GPT3.5 Turbo*** model (version **0613** or greater) in a region that can host GPT-3.5, GPT-4o and DALL-E models
 
 ## Challenges
 
