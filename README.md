@@ -15,13 +15,13 @@ This hack is designed for individuals who want to gain practical experience in w
 Participants will learn how to:
 
 - Build a simple chat using Semantic Kernel and C#
-- Add plugins and enable auto calling to create Planners
+- Add plugins and enable auto-calling to create Planners
 - Create a workflow plugin using Logic Apps
 - Implement Retrieval Augmented Generation (RAG)
   - Document Chunking
   - Grounding AI
-- Working with Image generation
-- Multi-Agent workflows
+- Work with Image generation
+- Develop Multi-Agent workflows
 
 ## Challenges
 
