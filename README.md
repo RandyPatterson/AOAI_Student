@@ -1,5 +1,7 @@
+# ❗Moved to [https://github.com/microsoft/ai-developer](https://github.com/microsoft/ai-developer)
+---
+---
 # What The Hack - Azure Open AI and Semantic Kernel Fundamentals
-
 ## Introduction
 
 The Azure OpenAI and Semantic Kernel Fundamentals What The Hack is an introduction to understanding the conceptual foundations of infusing your application with AI using the Semantic Kernel development kit. Materials from this hack can serve as a foundation for building your own AI infused solutions with Semantic Kernel.
